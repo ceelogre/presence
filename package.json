@@ -1,0 +1,29 @@
+{
+  "name": "presence",
+  "version": "1.0.0",
+  "description": "Personal website",
+  "main": "index.js",
+  "scripts": {
+    "test": "npm test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ceelogre/presence.git"
+  },
+  "keywords": [
+    "css",
+    "html",
+    "frontend",
+    "personal",
+    "website"
+  ],
+  "author": "Ceelogre",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/ceelogre/presence/issues"
+  },
+  "homepage": "https://github.com/ceelogre/presence#readme",
+  "dependencies": {
+    "bulma": "^0.7.5"
+  }
+}
