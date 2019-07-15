@@ -24,6 +24,7 @@
   },
   "homepage": "https://github.com/ceelogre/presence#readme",
   "dependencies": {
-    "bulma": "^0.7.5"
+    "bulma": "^0.7.5",
+    "moment": "^2.24.0"
   }
 }
