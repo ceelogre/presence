@@ -1,7 +1,10 @@
 const timeout = 5000
 let timeoutElt = document.getElementById('time')
 let billboardElt = document.getElementById('billboard')
+let pauseElt = document.getElementById('pauseTimer')
+
 let alarm = new Audio('../public/bummy.mp3')
+let remainingTime
 function startTimer() {
     console.error(`👋✨`)
     selectOption = document.getElementById('chosenOption')
@@ -25,11 +28,39 @@ function startTimer() {
 
 }
 
+function pauseTimer () {
+    if (pauseElt.value === 'pause') {
+        window.clearInterval(intervalId)
+        window.clearTimeout(timeOutId)
+        stopSound()
+        pauseElt.innerHTML = pauseElt.value = 'play'
+    } else {
+        resumeTimer()
+    }
+}
+
+let resumeTimer = () => {
+    remainingTime = parseInt(billboardElt.innerText)
+    
+    intervalId = window.setInterval(
+        () => {
+            billboardElt.innerHTML = remainingTime
+            remainingTime -= 1
+        }, 1000)
+
+    timeOutId = window.setTimeout(
+        () => {
+            window.clearInterval(intervalId)
+            alarm.play()
+        }, (remainingTime + 1) * 1000
+    )
+    pauseElt.innerHTML = pauseElt.value = 'pause'
+}
 function resetTimer() {
     window.clearTimeout(timeOutId)
-    window.clearTimeout(intervalId)
+    window.clearInterval(intervalId)
     billboardElt.innerHTML = 0
-    alarm.pause()
+    stopSound()
 }
 
 function alertClose () {
@@ -44,4 +75,9 @@ function generateRandomNumber () {
 
 function clearRandomNumber () {
     document.getElementById('number').innerHTML = '-'
+}
+
+function stopSound () {
+    alarm.pause()
+    alarm.currentTime = 0
 }
