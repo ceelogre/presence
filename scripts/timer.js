@@ -6,7 +6,7 @@ let pauseElt = document.getElementById('pauseTimer')
 let alarm = new Audio('../public/bummy.mp3')
 let remainingTime
 function startTimer() {
-    console.error(`👋✨`)
+    console.error(`✨Hello there 👋`)
     selectOption = document.getElementById('chosenOption')
     let chosenOption = selectOption.value
 

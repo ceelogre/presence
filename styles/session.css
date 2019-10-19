@@ -6,8 +6,16 @@
 
 body {
     margin: 1em;
+    font-family: Georgia,Times,"Times New Roman",serif;
+    color: #242424;
+    font-size: 20px;
 }
-
+@media (prefers-color-scheme: dark) {
+    body {
+        background-color:rgb(32, 33, 36);
+        color: #ffffff;
+    }
+}
 main {
     width: 10%;
     margin: 0 auto;
