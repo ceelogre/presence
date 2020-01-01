@@ -4,6 +4,7 @@
   "description": "Personal website",
   "main": "index.js",
   "scripts": {
+    "start": "webpack-dev-server --config ./webpack.config.js --mode development",
     "test": "npm test"
   },
   "repository": {
@@ -30,6 +31,12 @@
     "react-dom": "^16.12.0"
   },
   "devDependencies": {
-    "@babel/preset-react": "^7.7.4"
+    "@babel/core": "^7.7.7",
+    "@babel/preset-env": "^7.7.7",
+    "@babel/preset-react": "^7.7.4",
+    "babel-loader": "^8.0.6",
+    "webpack": "^4.41.5",
+    "webpack-cli": "^3.3.10",
+    "webpack-dev-server": "^3.10.1"
   }
 }
