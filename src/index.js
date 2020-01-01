@@ -7,7 +7,6 @@ let title = 4
 function countDown () {
     const remainingTime = new Date('jan 1, 2020 23:59:59') - new Date()
     let timeout = remainingTime
-    timeout -= 1
     const element = (
         <div style= {{ margin: "0 auto", width: 400, paddingTop: 200, textAlign: "justify" }}>
             <h1>I'm working</h1>
