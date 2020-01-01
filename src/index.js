@@ -1,9 +1,25 @@
 import React from 'react'
 import ReactDom from'react-dom'
+import App from './app'
 
-const title = 'Left with oFrom'
+let title = 4
 
-ReactDom.render(
-    <div> {title} </div>,
-    document.getElementById('app')
-)
+function countDown () {
+    const remainingTime = new Date('jan 1, 2020 23:59:59') - new Date()
+    let timeout = remainingTime
+    timeout -= 1
+    const element = (
+        <div style= {{ margin: "0 auto", width: 400, paddingTop: 200, textAlign: "justify" }}>
+            <h1>I'm working</h1>
+            <h2>This ugly page will be off in: </h2>
+            <h3> { new Date(timeout).toLocaleTimeString() } </h3>
+        </div>
+    )
+
+    ReactDom.render(
+        element,
+        document.getElementById('app')
+    )
+}
+
+setInterval(countDown, 1000)
