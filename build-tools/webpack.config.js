@@ -1,16 +1,7 @@
 // Inform Webpack to include js in the bundle
 module.exports = {
   entry: './src/index.js',
-  module: {
-    rules: [
-      {
-        test: /\.(js|jsx)$/,
-        exclude: /node_modules/,
-        use: ['babel-loader']
-      }
-    ]
-  },
-  resolve: {
+ resolve: {
     extensions: ['*', '.js', '.jsx']
   },
   output: {
