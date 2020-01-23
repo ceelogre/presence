@@ -5,7 +5,7 @@
   "main": "index.js",
   "scripts": {
     "start": "webpack-dev-server --open --config ./build-tools/webpack.dev.js",
-    "build": "webpack --config build-tools/webpack.prod.js",
+    "build": "webpack --config webpack.prod.js",
     "test": "npm test"
   },
   "repository": {
@@ -30,7 +30,8 @@
     "html-webpack-plugin": "^3.2.0",
     "moment": "^2.24.0",
     "react": "^16.12.0",
-    "react-dom": "^16.12.0"
+    "react-dom": "^16.12.0",
+    "serve": "^11.3.0"
   },
   "devDependencies": {
     "@babel/core": "^7.7.7",
