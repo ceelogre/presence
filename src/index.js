@@ -9,10 +9,13 @@ function countDown () {
     let timeout = new Date('Feb 5, 2020 23:59:59')
     const element = (
         <div className="main">
-            <Welcome />
-            <h1>working </h1>
-            <h2>This ugly page will be off at: </h2>
-            <h3> { timeout.toString() } </h3>
+            <div className="header"></div>
+            <div className="body">
+                <div className="coming-soon">
+                    <h1>Coming soon</h1>
+                </div>
+            </div>
+            <div className="footer"></div>
         </div>
     )
 

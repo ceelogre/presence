@@ -1,6 +1,39 @@
 .main {
-    margin: 0 auto;
-    width: 400px;
-    padding-top: 200px;
-    text-align: justify;
+    position: relative;
+    width: 1440px;
+    height: 900px;
+    background: white;
+}
+
+.header {
+    position: absolute;
+    width: 360px;
+    height: 67px;
+    left: 0px;
+    top: 0px;
+}
+
+.body {
+    position:absolute;
+    width: 1440px;
+    height: 740px;
+    left: 0px;
+    top: 155px;
+    background: url('../../../public/img/pandaTree.jpeg')
+}
+.footer {
+   position: absolute;
+   width: 1440px;
+   height: 4px; 
+   left: 0px;
+   top: 896px;
+}
+
+.coming-soon {
+    position: absolute;
+    width: 251px;
+    height: 14px;
+    left: 644px;
+    top: 434px;
+    font-size: 28px;
 }
