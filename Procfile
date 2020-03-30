@@ -1,1 +1,1 @@
-web: ./node_modules/serve/bin/serve.js -s dist
+web: npm build
