@@ -1,0 +1,29 @@
+.container {
+    display: grid;
+    position: relative;
+    width: 50%;
+    grid-template-areas: "oneOne oneTwo"
+                         "twoOne twoTwo";
+    grid-template-rows: 1fr 1fr;
+    grid-template-columns: 1fr 1fr;
+    justify-items: center;
+}
+
+.slow {
+    border: 2px solid brown;
+    overflow: hidden;
+    
+}
+
+.a {
+    grid-area: oneOne;
+}
+.b {
+    grid-area: twoOne;
+}
+.c {
+    grid-area: oneTwo;
+}
+.d {
+    grid-area: twoTwo;
+}
