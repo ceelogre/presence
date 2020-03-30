@@ -1,0 +1,52 @@
+$anime-color : #200;
+
+.site-layout-content {
+    background: white;
+    padding: 24px;
+    font-size: 16px;
+    min-height: 380px;
+}
+
+.antd-jumbotron {
+    background: #16a085;
+    min-height: 400px;
+}
+.jumbotron-header {
+    text-align: center;
+    padding: 120px 0px;
+}
+.jumbotron-header h1, h2 {
+    color: #ffe;
+}
+
+.jumbotron-header h1{
+    font-size: 50px;
+}
+
+.loading-animation div {
+    display: inline-block;
+    width: 4px;
+    height: 34px;
+    border-radius: 2px;
+    background-color: $anime-color;
+    margin: 2px;
+    //animation: pulse .9s ease-in-out -.6s backwards infinite;
+}
+.svg-spinner svg {
+    width: 200px;
+    height: 200px;
+    margin: auto;
+    padding-left: 100px;
+}
+@keyframes pulse {
+    0% {
+        height: 20px;
+    }
+
+    100% {
+        height: 100px;
+    }
+}
+.slide {
+    offset-path: ray(-45deg closest-side contain);
+}

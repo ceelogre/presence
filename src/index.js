@@ -1,30 +1,15 @@
 import React from 'react'
-import ReactDom from'react-dom'
-import Welcome from './components/header'
-import './stylesheets/base/base.scss'
-import './i18n'
+import { render } from 'react-dom'
+import { Provider } from 'react-redux'
+import { createStore } from 'redux'
+import rootReducer from './reducers/root'
+import App from './app'
 
+const store = createStore(rootReducer)
 
-function countDown () {
-    let timeout = new Date('Feb 5, 2020 23:59:59')
-    const element = (
-        <div className="main">
-            <div className="header">
-                <h1>Coming soon</h1>
-            </div>
-            <div className="body">
-                <div className="coming-soon">
-                    <img src="../../../public/img/pandaTree.jpeg" />
-                </div>
-            </div>
-            <div className="footer"></div>
-        </div>
-    )
-
-    ReactDom.render(
-        element,
-        document.getElementById('app')
-    )
-}
-
-setInterval(countDown, 1000)
+render (
+    <Provider store = {store} >
+        <App />
+    </Provider>,
+    document.getElementById('root')
+)
