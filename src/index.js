@@ -9,13 +9,15 @@ function countDown () {
     let timeout = new Date('Feb 5, 2020 23:59:59')
     const element = (
         <div className="main">
-            <div className="header"></div>
+            <div className="header">
+                <h1>Coming soon</h1>
+            </div>
             <div className="body">
                 <div className="coming-soon">
-                    <h1>Coming soon</h1>
+                    <img src="../../../public/img/pandaTree.jpeg" />
                 </div>
             </div>
-            <div className="footer"></div>
+            <div className="footer">Coming soon</div>
         </div>
     )
 
