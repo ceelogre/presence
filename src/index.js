@@ -17,7 +17,7 @@ function countDown () {
                     <img src="../../../public/img/pandaTree.jpeg" />
                 </div>
             </div>
-            <div className="footer">Coming soon</div>
+            <div className="footer"></div>
         </div>
     )
 
