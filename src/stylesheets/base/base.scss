@@ -1,39 +1,37 @@
 .main {
     position: relative;
-    width: 1440px;
-    height: 900px;
     background: white;
 }
 
 .header {
-    position: absolute;
-    width: 360px;
-    height: 67px;
     left: 0px;
     top: 0px;
 }
+.header h1 {
+    text-align: center;
+}
 
 .body {
-    position:absolute;
-    width: 1440px;
-    height: 740px;
     left: 0px;
-    top: 155px;
-    background: url('../../../public/img/pandaTree.jpeg')
 }
 .footer {
-   position: absolute;
-   width: 1440px;
-   height: 4px; 
    left: 0px;
    top: 896px;
 }
 
+@keyframes slidein {
+    from {
+        margin-left: 100%;
+    }
+
+    to {
+        margin-left: 0%;
+    }
+}
 .coming-soon {
-    position: absolute;
-    width: 251px;
-    height: 14px;
-    left: 644px;
-    top: 434px;
-    font-size: 28px;
+    overflow: hidden;
+    animation-duration: 3s;
+    animation-name: slidein;
+    animation-direction: alternate;
+    animation-iteration-count: infinite;
 }
