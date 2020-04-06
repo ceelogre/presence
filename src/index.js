@@ -5,26 +5,25 @@ import './stylesheets/base/base.scss'
 import './i18n'
 
 
-function countDown () {
-    let timeout = new Date('Feb 5, 2020 23:59:59')
-    const element = (
-        <div className="main">
-            <div className="header">
-                <h1>Coming soon</h1>
-            </div>
-            <div className="body">
-                <div className="coming-soon">
-                    <img src="../../../public/img/pandaTree.jpeg" />
+class CountDown extends React.Component {
+    render () {
+        return (
+            <div className="main">
+                <div className="header">
+                    <h1>Coming soon</h1>
                 </div>
+                <div className="body">
+                    <div className="coming-soon">
+                        <img src="../../../public/img/pandaTree.jpeg" />
+                    </div>
+                </div>
+                <div className="footer"></div>
             </div>
-            <div className="footer"></div>
-        </div>
-    )
+        )
+    }
+} 
 
     ReactDom.render(
-        element,
+        <CountDown />, 
         document.getElementById('app')
     )
-}
-
-setInterval(countDown, 1000)
