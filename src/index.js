@@ -1,6 +1,6 @@
 import React from 'react'
 import ReactDom from'react-dom'
-import Welcome from './components/header'
+import panda from './assets/images/pandaTree.jpeg'
 import './stylesheets/base/base.scss'
 import './i18n'
 
@@ -14,7 +14,7 @@ class CountDown extends React.Component {
                 </div>
                 <div className="body">
                     <div className="coming-soon">
-                        <img src="../../../public/img/pandaTree.jpeg" />
+                        <img src= {panda} />
                     </div>
                 </div>
                 <div className="footer"></div>
