@@ -5,7 +5,7 @@ import './stylesheets/base/base.scss'
 import './i18n'
 
 
-class CountDown extends React.Component {
+class Parent extends React.Component {
     render () {
         return (
             <div className="main">
@@ -24,6 +24,6 @@ class CountDown extends React.Component {
 } 
 
     ReactDom.render(
-        <CountDown />, 
-        document.getElementById('app')
+        <Parent />, 
+        document.getElementById('root')
     )
