@@ -1,10 +1,14 @@
 import React from 'react'
 import { useTranslation } from 'react-i18next'
 
-class Welcome extends React.Component {
+class Header extends React.Component {
     render () {
-        return <h1>You're Welcome</h1>
+        return (
+            <div className="header">
+                <h1>Coming soon</h1>
+            </div>
+        )
     }
 }
 
-export default Welcome
+export default Header
