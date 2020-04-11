@@ -1,9 +1,10 @@
 import React from 'react'
+import '../stylesheets/components/footer.scss'
 
 class Footer extends React.Component {
     render () {
         return (
-            <div className="footer">footer</div>
+            <p className='justify-content-md-center'>Made with <span className="love"> &#10084; &#x2764;</span> in Kigali </p>
         )
     }
 }

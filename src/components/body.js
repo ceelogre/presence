@@ -18,7 +18,7 @@ class Body extends React.Component {
     render () {
         return (
             <div className="body">
-                {/* <button onClick = { this.toggleView }>I fall apart</button> */}
+                <button className="btn btn-info" onClick = { this.toggleView }>I fall apart</button>
                 {/* <div  className = 'loading-animation' style = {{ visibility: this.state.isVisible }}>
                     <div></div>
                     <div></div>
@@ -26,8 +26,12 @@ class Body extends React.Component {
                 </div> */}
                 <div className = 'svg-spinner'>
                     <svg height = '100' width = '100'>
+                        <rect >
+                            <animate />
+                        </rect>
                         <circle cx = '50' cy = '50' r = '45' fill = 'teal'>
-                            <animate attributeName = 'r' values='0; 10; 30; 10; 0' dur='10s' repeatCount = 'indefinite' />
+                            <animate attributeName = 'r' values='0; 30; 0' dur='10s' repeatCount = 'indefinite' />
+                            <animate attributeName = 'fill' values= 'teal;red;rose;cyan' dur='2s' repeatCount = 'indefinite' />
                         </circle>
                     </svg>
                 </div>
