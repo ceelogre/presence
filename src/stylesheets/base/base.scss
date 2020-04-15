@@ -1,25 +1,10 @@
 @import '~bootstrap/scss/bootstrap';
 
+$body-color: #e9ecef;
 
 .main {
+    background-color: $body-color;
     position: relative;
-    background: white;
-}
-
-.header {
-    left: 0px;
-    top: 0px;
-}
-.header h1 {
-    text-align: center;
-}
-
-.body {
-    left: 0px;
-}
-.footer {
-   left: 0px;
-   top: 896px;
 }
 
 @keyframes slidein {

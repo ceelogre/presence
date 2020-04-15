@@ -4,7 +4,9 @@ import '../stylesheets/components/footer.scss'
 class Footer extends React.Component {
     render () {
         return (
-            <p className='justify-content-md-center'>Made with <span className="love"> &#10084; &#x2764;</span> in Kigali </p>
+            <div>
+            <p className='lead text-center'>Made with <span className="love"> &#10084; &#x2764;</span> in Kigali </p>
+            </div>
         )
     }
 }

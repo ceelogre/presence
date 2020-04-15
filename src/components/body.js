@@ -25,11 +25,11 @@ class Body extends React.Component {
                     <div></div>
                 </div> */}
                 <div className = 'svg-spinner'>
-                    <svg height = '100' width = '100'>
+                    <svg  className='slide'>
                         <rect >
                             <animate />
                         </rect>
-                        <circle cx = '50' cy = '50' r = '45' fill = 'teal'>
+                        <circle  cx = '50' cy = '50' r = '45' fill = 'teal'>
                             <animate attributeName = 'r' values='0; 30; 0' dur='10s' repeatCount = 'indefinite' />
                             <animate attributeName = 'fill' values= 'teal;red;rose;cyan' dur='2s' repeatCount = 'indefinite' />
                         </circle>
