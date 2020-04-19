@@ -1,6 +1,7 @@
 import React  from 'react'
 import '../stylesheets/components/body.scss'
 import TypeForm from './typeform'
+import UserLogin from './login'
 
 class Body extends React.Component {
     constructor(props) {
@@ -37,6 +38,7 @@ class Body extends React.Component {
                     </svg>
                 </div>
                 <TypeForm />
+                <UserLogin />
             </div>
         )
     }

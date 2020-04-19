@@ -10,9 +10,9 @@ class TypeForm extends React.Component {
     }
 
     updateText (event) {
-        this.setState(state => ({
+        this.setState({
             typed: event.target.value
-        })
+        }
         )
     }
     render () {
