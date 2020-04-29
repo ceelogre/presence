@@ -10,7 +10,6 @@ class ToDo extends React.Component {
         return (
             <div>
                 <ul>
-                    {this.state.items}
                 </ul>
                 <input type="text" />
             </div>

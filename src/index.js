@@ -1,42 +1,15 @@
 import React from 'react'
-import ReactDom from'react-dom'
+import { render } from 'react-dom'
+import { Provider } from 'react-redux'
+import { createStore } from 'redux'
+import rootReducer from './reducers/root'
+import App from './app'
 
-import Container from 'react-bootstrap/Container'
-import Row from 'react-bootstrap/Row'
-import Col from 'react-bootstrap/Col'
+const store = createStore(rootReducer)
 
-import Header from './components/header'
-import Body from './components/body'
-import Footer from './components/footer'
-import './stylesheets/base/base.scss'
-import './i18n'
-
-
-class Parent extends React.Component {
-    render () {
-        return (
-            <Container fluid className="main">
-                <Row>
-                    <Col>
-                        <Header />
-                    </Col>
-                </Row>
-                <Row>
-                    <Col>
-                        <Body />
-                    </Col>
-                </Row>
-                <Row >
-                    <Col >
-                        <Footer  />
-                    </Col>
-                </Row>
-            </Container>
-        )
-    }
-} 
-
-    ReactDom.render(
-        <Parent />, 
-        document.getElementById('root')
-    )
+render (
+    <Provider store = {store} >
+        <App />,
+    </Provider>,
+    document.getElementById('root')
+)
