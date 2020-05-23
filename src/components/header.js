@@ -1,18 +1,23 @@
 import React from 'react'
-import Jumbotron from 'react-bootstrap/Jumbotron'
-import Button from 'react-bootstrap/Button'
 import { useTranslation } from 'react-i18next'
+import { Layout, Menu } from 'antd'
 
-class Header extends React.Component {
+import '../stylesheets/components/header.scss'
+
+const { Header } = Layout
+class Header_ extends React.Component {
     render () {
         return (
-            <Jumbotron>
-                <h1>I will drive all night</h1>
-                <p>Most of the times, it takes a lot more and a little longer to get what you want</p>
-                <Button variant="primary">Really?</Button>
-            </Jumbotron>
+            <Header className='ant-header'>
+                <div className="logo"/>
+                <Menu theme="dark" mode="horizontal" style={{textAlign: 'center' }} defaultSelectedKeys={['2']}>
+                    <Menu.Item key="1">THOUGHTS</Menu.Item>
+                    <Menu.Item key="2">WORK</Menu.Item>
+                    <Menu.Item key="3">LET'S TALK</Menu.Item>
+                </Menu>
+            </Header>
         )
     }
 }
 
-export default Header
+export default Header_
