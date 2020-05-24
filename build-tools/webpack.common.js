@@ -4,7 +4,7 @@ const HtmlWebpackPlugin = require('html-webpack-plugin')
 
 module.exports = {
     entry: {
-        app: './src/index.js'
+        app: './src/index.js',
     },
     module: {
         rules: [
@@ -33,12 +33,13 @@ module.exports = {
     plugins: [
         new CleanWebpackPlugin(),
         new HtmlWebpackPlugin({
+            favicon: 'src/assets/images/eyelids.svg',
             title: 'Production',
             template: './src/index.html'
         })
     ],
     output: {
         filename: '[name].bundle.js',
-        path: path.resolve(__dirname , '../', 'dist')
+        path: path.resolve(__dirname , '../', 'dist'),
     }
 }
