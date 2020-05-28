@@ -10,7 +10,7 @@ class Header_ extends React.Component {
         return (
             <Header className='ant-header'>
                 <div className="logo"/>
-                <Menu theme="dark" mode="horizontal" style={{textAlign: 'center' }} defaultSelectedKeys={['2']}>
+                <Menu theme="dark" mode="horizontal" style={{textAlign: 'center' }}>
                     <Menu.Item key="1">THOUGHTS</Menu.Item>
                     <Menu.Item key="2">WORK</Menu.Item>
                     <Menu.Item key="3">LET'S TALK</Menu.Item>
