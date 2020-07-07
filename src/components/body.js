@@ -25,8 +25,8 @@ class Body extends React.Component {
                 </div>
                 <div className='site-layout-content'>
                     <p>Hi there, I'm Sam, a developer from Kigali, Rwanda. Nice to meet you :) </p>
-                    <p>I'm starting out in the engineering industry, my day job involves facilitating engineers
-        building products and - for my own growth -  writing <code>code</code> and applying the engineering practices that goes with it. I'm also gearing up for a night job which will be either contributing to open source
+                    <p>I'm in the software engineering industry, my day job involves working with engineers
+        building products and (for my own growth)  writing <code><i>code</i></code> and applying the engineering practices that goes with it. I'm also gearing up for a night job which will be either contributing to open source
         projects or implementing <bdi>ideas</bdi> or both.
       </p>
                     <p>
