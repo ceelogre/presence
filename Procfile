@@ -1,1 +1,2 @@
-web: npm run-script build
+web: ./node_modules/http-server/bin/http-server ./dist/
+
