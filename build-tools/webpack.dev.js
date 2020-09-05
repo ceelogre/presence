@@ -12,5 +12,6 @@ module.exports = merge(common, {
     },
     devtool: 'inline-source-map',
     devServer: {
+        historyApiFallback: true //For some reason, this allows to browser /thoughts, CSR??
     }
 })
