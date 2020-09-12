@@ -11,9 +11,10 @@ module.exports = {
   },
   devServer: {
     contentBase: './dist',
-    hot: true
+    hot: true,
+    historyApiFallback: true //For some reason, this allows to browser /thoughts, CSR??
   },
   plugins: [
     new webpack.HotModuleReplacementPlugin()
-  ]
+  ],
 };

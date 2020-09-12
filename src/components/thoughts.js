@@ -8,7 +8,7 @@ class Thoughts extends React.Component {
             <Content className='layout layout-mobile'>
                 <div className='site-layout-content'>
                     <h1>Bibliographie de Innocent Ruzigana</h1>
-                    <img src="./public/inn.jpg" alt="photo de Innocent"></img>
+                    <img src="/app/public/inn.jpg" alt="photo de Innocent"></img>
                     <p style={{ marginTop: '1em'}}>Innocent Ruzigana, né en 1959 est un Géstionaire du Site Mémorial - Ntarama situé dans le district de Bugesera, ville de Kigali, Rwanda. Il est le deuxième dans une famille de sept enfants. (4 frères et 3 sœurs.)</p>
                     <p> Innocent a grandi au Burundi; à cause du guerre de 1959 qui se passait au Rwanda, ses parents ont fuis le pays. C'est là où il a fait ces études primaire, secondaire et universitaire; ses quatre premières-années de primaires était proche de son quartier, il pourrait faire une petite marche mais cela a change quand il a commencé la cinquième année; il était obligée de faire une longue distance pour pouvoir arriver à l'ecôle. </p>
                     <p>Son enfance a été marquée par faire les même chose qui font une grande partie de la vie quotidienne des enfants par exemple, ils aimait jouer au football avec les autres mais il avait aussi des autres obligations à la maison par exemple, puiser de l'eau et garder les vaches.</p>
