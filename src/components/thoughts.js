@@ -1,11 +1,9 @@
 import React from 'react'
-import { Layout } from 'antd'
-const { Content } = Layout
 
 class Thoughts extends React.Component {
     render() {
         return (
-            <Content className='layout layout-mobile'>
+            <div className='layout layout-mobile'>
                 <div className='site-layout-content'>
                     <h1>Bibliographie de Innocent Ruzigana</h1>
                     <img src="https://pbs.twimg.com/profile_images/837969043248283648/2stfk0L1_400x400.jpg" alt="photo de Innocent"></img>
@@ -19,7 +17,7 @@ class Thoughts extends React.Component {
                     <p>Etant professeur de l'Université du Rwanda, il habitait dans la Province du Sud mais comme il venait d'avoir un nouveau position, il a demenagé et s'est localisé dans la ville de Kigali et c'est là où il habite maintenant avec sa famille.</p>
                     <p>Il pense à faire l'agriculture, oû une chose dans la cadre-culture pendant sa retraite.</p>
                 </div>
-            </Content>
+            </div>
         )
     }
 }
