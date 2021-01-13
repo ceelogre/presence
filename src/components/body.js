@@ -1,11 +1,5 @@
 import React from 'react'
 import '../stylesheets/components/body.scss'
-import TypeForm from './typeform'
-import UserLogin from './login'
-import ToDo from './todo'
-
-import { Layout, Breadcrumb } from 'antd'
-const { Content } = Layout
 
 class Body extends React.Component {
     constructor(props) {
@@ -14,9 +8,7 @@ class Body extends React.Component {
 
     render() {
         return (
-            <Content style={{ padding: '0 50px' }}>
-                <Breadcrumb style={{ margin: '48px 0' }}>
-                </Breadcrumb>
+            <div style={{ padding: '0 50px' }}>
                 <div className='antd-jumbotron'>
                     <div className='jumbotron-header'>
                         <h1>Samuel Nishimwe</h1>
@@ -33,7 +25,7 @@ class Body extends React.Component {
                         This is my personal website, here you can find my porfolio and if you have a minute, I also write about my professional life.
       </p>
                 </div>
-            </Content>
+            </div>
         )
     }
 }
