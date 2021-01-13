@@ -3,6 +3,7 @@ import App  from './app'
 import { BrowserRouter as Router, Switch, Route, Link } from 'react-router-dom'
 import  Thoughts  from './components/thoughts'
 import Sunshine from './components/sunshine'
+import Contact from './components/contact'
 
 const Paths = () => {
     return (
@@ -10,7 +11,7 @@ const Paths = () => {
             <Switch>
                 <Route path='/thoughts' component={Thoughts} />
                 <Route path='/' exact component={App} />
-                <Route path="/shoulder" exact  component={Sunshine} />
+                <Route path="/contact" exact  component={Contact} />
             </Switch>
         </Router>
     )

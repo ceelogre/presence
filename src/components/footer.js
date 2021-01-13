@@ -7,7 +7,7 @@ class Footer_ extends React.Component {
     render() {
         return (
             <Footer style={{ textAlign: 'center' }}>
-                <p className='text-center'>Made with <span className="love"> &#10084; &#x2764;</span> in Kigali </p>
+                <p className='text-center'>Made with <span className="love"> &#10084; &#x2764; </span>  in Kigali </p>
             </Footer>
         )
     }
