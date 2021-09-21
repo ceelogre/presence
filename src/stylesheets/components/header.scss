@@ -1,1 +1,9 @@
 $content-color: white;
+// center this card using flex
+.header-nav {
+  display: flex;
+  justify-content: center;
+}
+.header-nav > a {
+  padding: 10px;
+}
