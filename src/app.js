@@ -2,7 +2,6 @@ import React from 'react'
 
 
 import './stylesheets/base/base.scss'
-import './i18n'
 import Footer_ from './components/footer'
 import Body from './components/body'
 import Header from './components/header'

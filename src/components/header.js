@@ -5,10 +5,10 @@ import '../stylesheets/components/header.scss'
 
 class Header extends React.Component {
     render () {
-        return ( <div>
-                    <Link  to="/thoughts" title="Thoughts" >THOUGHTS</Link>
-                    <a href="/work" title="Work" >WORK</a>
-                    <a href="contact" title="contact">LET'S TALK</a>
+        return ( <div className="header-nav">
+                        <Link  to="/thoughts" title="Thoughts" >THOUGHTS</Link>
+                        <Link to="/work" title="Work" >WORK</Link>
+                        <Link to="contact" title="contact">LET'S TALK</Link>
                     </div>
         )
     }

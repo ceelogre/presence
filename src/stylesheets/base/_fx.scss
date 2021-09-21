@@ -1,0 +1,10 @@
+//this is a partial file
+@use './base';
+
+@function color($key) {
+  @if map-has-key(base.$colors, $key) {
+    @return map-get(base.$color , $key)
+  }
+  @warn "unknown `#{$key}` in $colors";
+  @return null
+}
