@@ -1,9 +1,12 @@
-$content-color: white;
 // center this card using flex
 .header-nav {
   display: flex;
   justify-content: center;
+  background: #001529;
+  margin-bottom: 20px
 }
 .header-nav > a {
-  padding: 10px;
+  padding: 20px;
+  text-decoration: none;
+  color: rgba(255, 255, 255, 0.65);
 }
