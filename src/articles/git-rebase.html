@@ -1,0 +1,39 @@
+I had to start mongod with replicaset on instead of using a service to be able to save data using paymatic js
+Wow! It creates a new speed database different from the one I already had.
+git rebase 101: I was on contact-image branch. The branch had much of the commits from master except one commit. I opened a PR for this but the team did not merge it immediately yet I wanted to start using the latest code right away. Instead of branching from this branch, I branched off from master (which had all but one commits from contact-image) started doing my work, then when they approved the PR  rebased my work off master.
+
+By doing node_env='dev', the value isn't available in the app but when you do export node_env = 'dev', it's available.
+
+Indeed, getting geo location on http might have been disabled in Chrome.
+
+Getting ready for work? I mean writing scripts for frequent tasks.
+My first one is pushing a small change. Noticed it's a problem when trying to build a docker image with Jenkins. The configs were messed up so we kept making incremental changes until it was annoying. Wrote a script to add the changed file, commit it and push it. So far doesn't handle credentials caching so in case I mistype it, I've broken the flow. Worth a dime though!
+whenwas tool I created for myself.
+Adding CC
+1. Get a key for the repo
+2.  Add it to CircleCI
+3. Add configs vars to config.yml
+4. Add nyc
+5. Run nyc locally to produce the inital report
+
+Changing the SSL to full from flexible renders my site unreachable.
+
+Git reflog is a life saver.
+
+I did a git rebase -i HEAD~3
+
+pick sha.. (oldest)
+pick sha...
+pick sha... (newest)
+
+So, what I did was pick the oldest, that means after I finished rebasing, I had lost all of my recent work.
+
+How did I solve it?
+
+Git reflog,
+Find the HEAD where I was previously,
+Git reset HEAD~[commit number]
+
+After this, my work was staged so, I discarded the changes and interestingly, I went back to the rebase process where I was first!
+
+That means I had to git rebase --abort and come back to the initial stage before I attempted squashing.
