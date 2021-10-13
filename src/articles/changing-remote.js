@@ -6,7 +6,6 @@ class ChangingRemote extends React.Component {
       <main>
         <h2> Changing Remote</h2>
         <h3>Problem: I wanted to create a copy of a reposirty without forking it.</h3>
-        <p>
 
           <p>Approach: I went ahead and cloned the repo on my PC. Second, I created a new repository that I will be pushing to under my github account. The last thing was to point the local project to my remote instead of the original remote.</p>
 
@@ -22,7 +21,6 @@ class ChangingRemote extends React.Component {
           <p>There are other options like --delete which would do half of what I was looking for: removing the pointer to the remote uri but I went ahead and created the whole thing in one line.</p>
 
           <p>Next time I come across this, I'll just lie to myself that I will rememmber how to do it without looking at this article.</p>
-            </p>
             </main>
             )
   }
