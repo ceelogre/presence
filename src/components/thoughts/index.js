@@ -1,6 +1,8 @@
 import React from "react";
 import { Link , Switch, Route} from 'react-router-dom'
 import ChangingRemote from '../../articles/changing-remote'
+import BashManipulation from "../../articles/2>&1";
+import '../../stylesheets/components/thoughts.scss'
 
 // create a class declaration
 class Thoughts extends React.Component {
@@ -8,22 +10,22 @@ class Thoughts extends React.Component {
   render() {
     return (
       <main className="thoughts">
-        <h3>Thoughts</h3>
+        <h3>Technical writing</h3>
         <p>
-          Welcome to my Thoughts section. Here, You'll find anything from tech to trading to health. Enjoy!
+          Welcome to my Thoughts section. This is my writing area, You'll find anything from tech to trading to health. Enjoy!
         </p>
         <section>
-          <Link to="/thoughts/2>1">Bash output manipulation</Link>
-          <Link to="/thoughts/git-remote">Changing the remote </Link>
-          <Link to='/thoughts/heroku'> Heroku </Link>
-          <Link to='/thoughts/radar'>Traffic Police Radar</Link>
-          <Link to='/thoughts/se'>Stock Exchange</Link>
-          <Link to='/thoughts/git-rebase'>Rebasing</Link>
+          <Link to="/thoughts/2>1">Bash output manipulation</Link> <br/>
+          <Link to="/thoughts/git-remote">Changing the remote </Link> <br/>
+          <Link to='/thoughts/heroku'> Heroku </Link> <br/>
+          <Link to='/thoughts/radar'>Traffic Police Radar</Link><br />
+          <Link to='/thoughts/se'>Stock Exchange</Link><br></br>
+          <Link to='/thoughts/git-rebase'>Rebasing</Link><br />
           
         </section>
         <Switch>
-
-               ./ <Route path='/thoughts/git-remote'   component={ChangingRemote} />
+               <Route path='/thoughts/git-remote'   component={ChangingRemote} />
+               <Route path='/thoughts/2>1' component={BashManipulation} />
         </Switch>
       </main>
     );
