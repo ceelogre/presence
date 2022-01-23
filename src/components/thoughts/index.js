@@ -2,6 +2,7 @@ import React from "react";
 import { Link , Switch, Route} from 'react-router-dom'
 import ChangingRemote from '../../articles/changing-remote'
 import BashManipulation from "../../articles/2>&1";
+import HerokuConfig from '../../articles/heroku'
 import '../../stylesheets/components/thoughts.scss'
 
 // create a class declaration
@@ -26,6 +27,7 @@ class Thoughts extends React.Component {
         <Switch>
                <Route path='/thoughts/git-remote'   component={ChangingRemote} />
                <Route path='/thoughts/2>1' component={BashManipulation} />
+               <Route path='/thoughts/heroku' component={HerokuConfig} />
         </Switch>
       </main>
     );
