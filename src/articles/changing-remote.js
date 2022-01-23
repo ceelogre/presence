@@ -20,7 +20,7 @@ class ChangingRemote extends React.Component {
 
           <p>There are other options like <code> --delete </code> which would do half of what I was looking for: removing the pointer to the remote uri but I went ahead and created the whole thing in one line.</p>
 
-          <p>Next time I come across this, I'll just lie to myself that I will rememmber how to do it without looking at this article.</p>
+          <p>Next time I come across this, I'll just lie to myself that I will remember how to do it without looking at this article.</p>
             </div>
       )
   }
