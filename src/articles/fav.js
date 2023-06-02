@@ -3,11 +3,35 @@ const favorites = () => {
     const favs = [
         {
             artist: "Mike Will Made it",
-            Song: "23"
+            song: "23"
         },
         {
             artist: "Post Malone",
-            Song: "Candy Paint"
+            song: "Candy Paint"
+        },
+        {
+            artist: "The Chain Smokers",
+            song: "Last day alive"
+        },
+        {
+            artist: "Petit Biscuit",
+            song: "Drivin Thru the Night"
+        },
+        {
+            artist: "Travis Scott",
+            song: "Highest in the room"
+        },
+        {
+            artist: "Miley Cyrus",
+            song: "Adore you"
+        },
+        {
+            artist: "Migos",
+            song: "T-shirt"
+        },
+        {
+            artist: "Mike Will made it",
+            song: "23"
         }
     ]
 }
