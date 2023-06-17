@@ -32,6 +32,18 @@ const favorites = () => {
         {
             artist: "Mike Will made it",
             song: "23"
+        },
+        {
+            artist: "Missy Eliott",
+            song: "Get your freak on"
+        },
+        {
+            artist: "Beyonce",
+            song: "Video Phone"
+        },
+        {
+            artist: "Lady Gaga",
+            song: "Paparazzi"
         }
     ]
 }
