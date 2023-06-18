@@ -10,7 +10,6 @@ const article = () => {
 
     Crossing the border to Uganda was pretty easy as I've done it before the only problem is that I got to Kabale (the next town) in the evening which meant I was gonna drive to Kampala through the night something that I was really discouraged not to do but I did it anyway. On my way to Kampala, I noticed the change in gas price; as it turns out, the closer you get to town, the better the prices get so, places that are far from the capital have relatively higher gas price so I learned that I probably don't want to refill only in the main cities.
 
-    The next
-
+    The next thing that was confusing is Kampala flyovers. The roundabouts have lights that are always (I'm not sure but when I passed by to and fro they were on) flashing yellow. My reasoning was that it means that it's safe to turn around.
      `
 }
