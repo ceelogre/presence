@@ -44,6 +44,10 @@ const favorites = () => {
         {
             artist: "Lady Gaga",
             song: "Paparazzi"
+        },
+        {
+            artist: "The Weeknd",
+            song: "Earned it"
         }
     ]
 }
