@@ -57,6 +57,14 @@ const favorites = () => {
             artist: "Cardi B",
             song: "Bodak yellow",
             feat: "Kodak Black"
+        },
+        {
+            artist: "Juicy J",
+            song: "Bounce",
+            feat: [
+                "Trey Songz",
+                "Wale"
+            ]
         }
     ]
 }
