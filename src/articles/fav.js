@@ -48,6 +48,27 @@ const favorites = () => {
         {
             artist: "The Weeknd",
             song: "Earned it"
+        },
+        {
+            artist: "Bazzi",
+            song: "Young and Alive"
+        },
+        {
+            artist: "Cardi B",
+            song: "Bodak yellow",
+            feat: "Kodak Black"
+        },
+        {
+            artist: "Juicy J",
+            song: "Bounce",
+            feat: [
+                "Trey Songz",
+                "Wale"
+            ]
+        },
+        {
+            artist: "Linkin Park",
+            song: "Roads untraveled"
         }
     ]
 }

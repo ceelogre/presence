@@ -1,21 +1,31 @@
 $anime-color : #200;
 @use '../base/base.scss' ;
 
-.body {
-  background-color: white;
+main {
+  padding: 2rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
+
+
+
+.layout {
+  display: grid;
+  grid-template-rows: auto 1fr auto;
+}
+
+
 .jumbotron {
-  background-color:#16a085;
   background-size: 80%;
   height: 50vh;
   text-align: center;
-  color: white;
   // add a shadow
   box-shadow:inset 0 0 0 1px rgba(0,0,0,0.1);
   display: flex;
   flex-direction: column;
   justify-content: center;
-  color: #ffe
+  width: 100%;
 }
 
 .jumbotron h1{

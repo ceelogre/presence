@@ -1,18 +1,18 @@
-import React from 'react'
+import React, { createContext } from 'react'
 import { render } from 'react-dom'
-import { Provider } from 'react-redux'
-import { createStore } from 'redux'
-import rootReducer from './reducers/root'
 import Paths from './paths'
 import {BrowserRouter} from 'react-router-dom'
 
-const store = createStore(rootReducer)
+const UserContext = createContext({
+    state: {},
+    actions: {}
+})
 
 render (
-    <Provider store = {store} >
+    <UserContext.Provider >
         <BrowserRouter>
             <Paths />
         </BrowserRouter>
-    </Provider>,
+    </UserContext.Provider>,
     document.getElementById('root')
 )
