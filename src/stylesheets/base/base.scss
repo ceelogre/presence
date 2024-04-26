@@ -3,10 +3,10 @@
 @use 'vars';
 * {
   box-sizing: border-box;
-}
-body {
   $merriweather: 'Merriweather';
   font-family: $merriweather;
+}
+body {
   background-color: #f5f5f5;
   color:rgba(0, 0, 0, 0.87);
   background-color: #e9ecef;
