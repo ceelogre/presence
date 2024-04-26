@@ -65,6 +65,10 @@ const favorites = () => {
                 "Trey Songz",
                 "Wale"
             ]
+        },
+        {
+            artist: "Linkin Park",
+            song: "Roads untraveled"
         }
     ]
 }
