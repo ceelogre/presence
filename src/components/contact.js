@@ -1,4 +1,5 @@
 import React from 'react'
+import ContactHandler from './fx/contact'
 import '../stylesheets/components/contact.scss'
 
 const Contact = () => {
@@ -8,19 +9,19 @@ const Contact = () => {
       <section>
         <p>Wanna get in touch? Use the form below</p>
       </section>
-      <div class="form-card">
-        <form onsubmit="return" id='form'>
-          <div class="form-group">
-            <input type="text" class="form-control" id="username" placeholder="Name" />
+      <div className="form-card">
+        <form onSubmit={ContactHandler} id='form'>
+          <div className="form-group">
+            <input type="text" className="form-control" id="username" placeholder="Name" />
           </div>
-          <div class="form-group">
-            <input type="email" class="form-control" name="email" placeholder="Your email address" required/>
+          <div className="form-group">
+            <input type="email" className="form-control" name="email" placeholder="Your email address" required/>
           </div>
-          <div class="form-group">
-            <textarea name="text" maxlength="1000" id="text" cols="30" rows="10" class="form-control" placeholder="your message" title="Pro-tip: resize this window by dragging the tiles in the bottom-corner" required></textarea>
+          <div className="form-group">
+            <textarea name="text" maxLength="1000" id="text" cols="30" rows="10" className="form-control" placeholder="your message" title="Pro-tip: resize this window by dragging the tiles in the bottom-corner" required></textarea>
           </div>
-          <div class="form-group">
-            <button id="form-submit" type="submit" class="btn-primary form-control">Send</button>
+          <div className="form-group">
+            <button id="form-submit" type="submit" className="btn-primary form-control">Send</button>
           </div>
         </form>
       </div>
