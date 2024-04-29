@@ -26,6 +26,7 @@
   },
   "homepage": "https://github.com/ceelogre/presence#readme",
   "dependencies": {
+    "firebase": "^10.11.1",
     "html-webpack-plugin": "^5.3.2",
     "http-server": "^14.1.0",
     "moment": "^2.29.2",

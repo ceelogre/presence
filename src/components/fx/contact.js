@@ -1,15 +1,24 @@
-import React from 'react'
-import { useState } from 'react'
+import React, { useState } from 'react'
+import { collection, addDoc } from 'firebase/firestore'
+import { storage } from '../../utils/firebase'
 
-
-const FormSubmitSuccess = () => {
+const useContactForm = () => {
     [value, setValue] = useState("")
     [result, setResult] = useState("")
 
-}
+    const handleChange = (e) => {
+        setValue(e.target.value)
+        setResult("")
+    }
 
-const ContactHandler = (event) => {
+const handleSubmit = async (event) => {
     event.preventDefault()
+
+    try {
+        await addDoc(collection(storage, 'contacts', result))
+    } catch (e){
+        await addDoc(collection(storage, 'errors', e))
+    }
     return (
         <div>
             <p>We'll be in touch soon!</p>
@@ -17,9 +26,8 @@ const ContactHandler = (event) => {
     )
 }
 
-    const handleChange = (e) => {
-        setValue(e.target.value)
-        setResult("")
-    }
+    return { handleSubmit, handleChange}
 
-export default ContactHandler
+}
+
+export default useContactForm
