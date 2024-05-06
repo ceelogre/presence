@@ -69,6 +69,19 @@ const favorites = () => {
         {
             artist: "Linkin Park",
             song: "Roads untraveled"
+        },
+        {
+            artist: "PNL",
+            song: "Ryuk"
+        },
+        {
+            artist: "Jack U",
+            song: "Where are u now",
+            feat: [
+                "Skrilles",
+                "Diplo",
+                "Justin Bieber"
+            ]
         }
     ]
 }
