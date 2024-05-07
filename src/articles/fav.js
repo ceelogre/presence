@@ -82,6 +82,13 @@ const favorites = () => {
                 "Diplo",
                 "Justin Bieber"
             ]
+        },
+        {
+            artist: "Afrojack",
+            song: "Another life",
+            feat: [
+                "David Guetta", "Ester Dean"
+            ]
         }
     ]
 }
