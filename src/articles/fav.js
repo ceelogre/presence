@@ -89,6 +89,10 @@ const favorites = () => {
             feat: [
                 "David Guetta", "Ester Dean"
             ]
+        },
+        {
+            artist: "Tory Lanez",
+            song: "Say it"
         }
     ]
 }
