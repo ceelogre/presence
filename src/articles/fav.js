@@ -101,6 +101,10 @@ const favorites = () => {
         {
             artist: "One Republic",
             song:"Let's hurt tonight"
+        },
+        {
+            artist: "Ed Sheeran",
+            song: "Castle on the hill"
         }
     ]
 }
