@@ -105,6 +105,11 @@ const favorites = () => {
         {
             artist: "Ed Sheeran",
             song: "Castle on the hill"
+        },
+        {
+            artist: 'Kelly Rowland',
+            song: 'Like this',
+            feat: 'Eve'
         }
     ]
 }
