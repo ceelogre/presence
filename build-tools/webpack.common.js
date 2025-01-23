@@ -19,7 +19,7 @@ module.exports = {
              test: /\.scss$/,
             use: [ 'style-loader', 'css-loader', 'sass-loader' ]
         }, {
-            test: /(\.svg$|\.jpeg$)/,
+            test: /(\.svg$|\.jpeg|\.pdf$)/,
             use: [
                 {
                     loader: 'url-loader',
@@ -32,7 +32,7 @@ module.exports = {
     plugins: [
         new HtmlWebpackPlugin({
             favicon: 'src/assets/images/eyelids.svg',
-            title: 'Production',
+            title: 'Samuel Nishimwe - Official Site',
             template: './src/index.html'
         })
     ],
