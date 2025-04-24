@@ -34,7 +34,7 @@
     "react": "^16.14.0",
     "react-dom": "^16.14.0",
     "react-i18next": "^11.8.5",
-    "react-router-dom": "^5.2.0",
+    "react-router-dom": "^7.5.2",
     "webpack-cli": "^4.8.0"
   },
   "devDependencies": {
