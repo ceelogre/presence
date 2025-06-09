@@ -1,7 +1,8 @@
 const merge = require('webpack-merge')
 const common = require('./webpack.common')
+const config = require('./webpack.config')
 
-module.exports = merge(common, {
+const devConfig = {
     mode: 'development',
     module: {
         rules: [
@@ -12,6 +13,10 @@ module.exports = merge(common, {
     },
     devtool: 'inline-source-map',
     devServer: {
-        historyApiFallback: true //For some reason, this allows to browser /thoughts, CSR??
+        allowedHosts: "all",
+        host: "0.0.0.0",
+        port: 8080,
     }
-})
+};
+
+module.exports = merge(common, config, devConfig);
