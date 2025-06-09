@@ -28,5 +28,6 @@ const gnomeCrashArticle = () => {
     <h3>Takeaway</h3>
     <p>The first is to ensure that suspend mode works properly moving foward</p>
     <p>On a system crash, coredumpctl will be my first stop.</p>
+    <p>In conclusion, I lost so much time but I l</p>
 </div>
 }

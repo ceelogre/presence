@@ -1,4 +1,5 @@
 // Inform Webpack to include js in the bundle
+const CWP = require('copy-webpack-plugin')
 module.exports = {
   entry: './src/index.js',
  resolve: {
@@ -7,14 +8,17 @@ module.exports = {
   output: {
     path: __dirname + '/dist',
     publicPath: '/',
-    filename: 'bundle.js',
+    filename: 'bundle.js', 
   },
   devServer: {
-    contentBase: './dist',
     hot: true,
     historyApiFallback: true //For some reason, this allows to browser /thoughts, CSR??
   },
-  plugins: [
-    new webpack.HotModuleReplacementPlugin()
-  ],
+    plugins: [
+        new CWP({
+          patterns: [
+            {from: 'public', to: 'public'}
+          ]
+        })
+      ]
 };

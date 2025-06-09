@@ -1,18 +1,18 @@
 import React, { createContext } from 'react'
-import { render } from 'react-dom'
+import { createRoot } from 'react-dom/client'
 import Paths from './paths'
 import {BrowserRouter} from 'react-router-dom'
 
-const UserContext = createContext({
-    state: {},
-    actions: {}
-})
+const ThemeContext = createContext()
 
-render (
-    <UserContext.Provider >
+const root = createRoot(
+    document.getElementById('root')
+)
+
+
+root.render (
+    <ThemeContext value="light" >
         <BrowserRouter>
             <Paths />
         </BrowserRouter>
-    </UserContext.Provider>,
-    document.getElementById('root')
-)
+    </ThemeContext>)
