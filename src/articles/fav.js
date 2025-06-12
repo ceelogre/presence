@@ -93,6 +93,23 @@ const favorites = () => {
         {
             artist: "Tory Lanez",
             song: "Say it"
+        },
+        {
+            artist: "T.I",
+            song: "What's up"
+        },
+        {
+            artist: "One Republic",
+            song:"Let's hurt tonight"
+        },
+        {
+            artist: "Ed Sheeran",
+            song: "Castle on the hill"
+        },
+        {
+            artist: 'Kelly Rowland',
+            song: 'Like this',
+            feat: 'Eve'
         }
     ]
 }
