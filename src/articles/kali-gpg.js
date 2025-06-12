@@ -1,0 +1,4 @@
+const KaliArticle = () => {
+
+    const articleTitle = "Kali has upgraded their GPG for all users"
+    const articleBody = "Yeap! You heard me right. As of 04/28/2025 their signing keys have change. How did I notice? I was performing a routine update but kept noticing warnings in the ap update command and lots of errors in the apt upgrade. As any other developer in 2024 and up! I turned to AI and after sending the error as a prompt, it quickly replied that the keys have changed recently. I doubted how recent that could be then went on to do an old web search and yes! the first result was a blog from Kali mentioning that the keys have changed. You can read it yourself here: https://www.kali.org/blog/new-kali-archive-signing-key/"

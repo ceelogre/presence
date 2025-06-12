@@ -6,6 +6,7 @@ import WorkIndex from './components/work/index'
 import Header from './components/header'
 import fourOfour from './components/404'
 import Contact from './components/contact'
+
 const Paths = () => {
     return (
         <Router>
@@ -15,6 +16,7 @@ const Paths = () => {
                 <Route path='/work' component={WorkIndex} />
                 <Route path='/thoughts' component={Thoughts} />
                 <Route path='/' exact component={App} />
+
                 <Route component={fourOfour} />
 
             </Switch>
