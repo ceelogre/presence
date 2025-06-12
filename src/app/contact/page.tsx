@@ -6,7 +6,7 @@ export default function Contact() {
       <h1>Contact</h1>
       <div className={styles.contactContent}>
         <p className={styles.contactIntro}>
-          Have a question or want to work together? Feel free to reach out.
+          Wanna work together? Feel free to reach out.
         </p>
         <form className={styles.contactForm}>
           <div className={styles.formGroup}>
