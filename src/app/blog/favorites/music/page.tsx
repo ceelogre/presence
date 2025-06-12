@@ -9,7 +9,7 @@ interface Song {
 }
 
 export default function Favorites() {
-  const favs = [
+  const favs: Song[] = [
         {
             artist: "Mike Will Made it",
             song: "23"
