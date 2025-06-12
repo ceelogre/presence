@@ -1,0 +1,21 @@
+.thoughts {
+  padding: 2rem 0;
+}
+
+.thoughtsGrid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  gap: 2rem;
+  margin-top: 2rem;
+}
+
+.thoughtCard {
+  padding: 1.5rem;
+  border: 1px solid var(--border-color);
+  border-radius: 8px;
+  transition: transform 0.2s;
+}
+
+.thoughtCard:hover {
+  transform: translateY(-4px);
+} 
