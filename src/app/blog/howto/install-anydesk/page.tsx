@@ -5,27 +5,27 @@ export default function AptArticle() {
         <div className={styles.container}>
             <h1>How to install a software with apt package manager</h1>
             <p>Most softwares are avaiable for linux; you just need to know the right way to install them. One of the quickest way to do it is by using a repository manager like apt for .deb and yum/dnf for .rpm</p>
-            <p>In this demo, I'm going to install Anydesk.</p>
+            <p>In this demo, I&apos;m going to install Anydesk.</p>
             <p>The first thing to do is to add the software fingerprint which allows the operating system to verify the authenticity of the publisher and many other things I do not know.</p>
             <p>You may see online a lot of lines like this: </p>
             <pre className={styles.code}>
-                <code>echo "deb http://deb.anydesk.com/ all main" | sudo tee /etc/apt/sources.list.d/anydesk-stable.list</code>
+                <code>echo &quot;deb http://deb.anydesk.com/ all main&quot; | sudo tee /etc/apt/sources.list.d/anydesk-stable.list</code>
             </pre>
             <p>However, apt-key is now depreceated so this might cause you problems in the future. Use this:</p>
             <pre className={styles.code}>
                 <code>wget -qO - https://keys.anydesk.com/repos/DEB-GPG-KEY | gpg --dearmor | sudo tee /usr/share/keyrings/anydesk-archive-keyring.gpg &gt; /dev/null</code>
             </pre>
-            <p>This will connect to anydesk server, download the keyring and add it in /usr/share/keyrings while at the sametime discarding the output (tee effect) so you don't see it on stdout (most likely your terminal)</p>
+            <p>This will connect to anydesk server, download the keyring and add it in /usr/share/keyrings while at the sametime discarding the output (tee effect) so you don&apos;t see it on stdout (most likely your terminal)</p>
             <p>After this, add the server to the sources:</p>
             <pre className={styles.code}>
-                <code>echo "deb [signed-by=/usr/share/keyrings/anydesk-archive-keyring.gpg] https://deb.anydesk.com/ all main" | sudo tee /etc/apt/sources.list.d/anydesk-stable.list</code>
+                <code>echo &quot;deb [signed-by=/usr/share/keyrings/anydesk-archive-keyring.gpg] https://deb.anydesk.com/ all main&quot; | sudo tee /etc/apt/sources.list.d/anydesk-stable.list</code>
             </pre>
             <p>You can see that we explicitly add where to find the keyring before specifying what url to hit</p>
             <p>After this, update the repo manager so that it hits the new server</p>
             <pre className={styles.code}>
                 <code>sudo apt update</code>
             </pre>
-            <p>If you inspect the output, there should be an entry for anydesk that's similar to</p>
+            <p>If you inspect the output, there should be an entry for anydesk that&apos;s similar to</p>
             <pre className={styles.code}>
                 <code>Hit:2 http://deb.anydesk.com all InRelease</code>
             </pre>
