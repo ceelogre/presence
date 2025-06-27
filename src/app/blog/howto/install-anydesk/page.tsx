@@ -34,6 +34,20 @@ export default function AptArticle() {
                 <code>sudo apt install anydesk</code>
             </pre>
             <p>Now the package manager will know where to look for this package and install it.</p>
+            <h3>Bonus</h3>
+            <p>If you ever need to uninstall it, you can do so with</p>
+            <pre className={styles.code}>
+                <code>sudo apt purge anydesk</code>
+            </pre>
+            <p>Remove the entry from sources.list</p>
+            <pre className={styles.code}>
+                <code>sudo rm /etc/apt/sources.list.d/anydesk-stable.list</code>
+            </pre>
+            <p>If for some reason the GPG key is not removed automatically, you can also remove it manually</p>
+            <pre className={styles.code}>
+                <code>sudo rm /usr/share/keyrings/anydesk-archive-keyring.gpg</code>
+            </pre>
+            <p>This will remove the package and all its dependencies.</p>
         </div>
     );
 }
