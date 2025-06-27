@@ -4,6 +4,7 @@ import "./globals.css";
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
 import { ThemeProvider } from "@/context/ThemeContext";
+import ThemeToggle from "@/components/ThemeToggle";
 
 const outfit = Outfit({
   subsets: ["latin"],
@@ -50,6 +51,7 @@ export default function RootLayout({
               {children}
             </main>
             <Footer />
+            <ThemeToggle />
           </div>
         </ThemeProvider>
       </body>
