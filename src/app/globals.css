@@ -7,13 +7,19 @@
   /* Layout Variables */
   --max-width: 1200px;
   --header-height: 60px;
-  --footer-height: 200px;
+  --footer-height: 60px;
 
   /* Color Variables - Light theme (default) */
   --background: #ffffff;
   --foreground: #171717;
   --border-color: #eaeaea;
   --hover-color: #666;
+  --code-background: #f5f5f5;
+  --code-foreground: #333;
+  --blockquote-background: #f8f8f8;
+  --blockquote-border: #ddd;
+  --link-color: #0066cc;
+  --link-hover: #004499;
 }
 
 /* Dark theme via media query */
@@ -21,6 +27,14 @@
   :root {
     --background: #0a0a0a;
     --foreground: #ededed;
+    --border-color: #2a2a2a;
+    --hover-color: #999;
+    --code-background: #1a1a1a;
+    --code-foreground: #e0e0e0;
+    --blockquote-background: #1a1a1a;
+    --blockquote-border: #333;
+    --link-color: #66b3ff;
+    --link-hover: #99ccff;
   }
 }
 
@@ -28,14 +42,180 @@
 :root[data-theme="dark"] {
   --background: #0a0a0a;
   --foreground: #ededed;
+  --border-color: #2a2a2a;
+  --hover-color: #999;
+  --code-background: #1a1a1a;
+  --code-foreground: #e0e0e0;
+  --blockquote-background: #1a1a1a;
+  --blockquote-border: #333;
+  --link-color: #66b3ff;
+  --link-hover: #99ccff;
+  --color-dark: #fff;
+  --rgb-dark: 255, 255, 255;
+  --color-light: #1a1d24;
+  --rgb-light: 26, 29, 36;
+  --color-text: #eef5ff;
+  --rgb-text: 238, 245, 255;
+  --color-white: #fff;
+  --rgb-white: 255, 255, 255;
+  --color-header-bg: #252627;
+  --rgb-header-bg: 37, 38, 39;
+  --color-bg: #1a1d24;
+  --rgb-bg: 26, 29, 36;
+  --color-main-bg: #191c22;
+  --rgb-main-bg: 25, 28, 34;
+  --color-border: #3f4245;
+  --rgb-border: 63, 66, 69;
+  --color-main: #49abff;
+  --rgb-main: 73, 171, 255;
+  --color-main-dark-01: #9dadbe;
+  --rgb-main-dark-01: 157, 173, 190;
+  --color-main-dark-02: #9dadbe;
+  --rgb-main-dark-02: 157, 173, 190;
+  --color-card-time: #9fb0b9;
+  --rgb-card-time: 159, 176, 185;
+  --color-card-excerpt: #78868e;
+  --rgb-card-excerpt: 120, 134, 142;
+  --color-nav-link: #c0d1dc;
+  --rgb-nav-link: 192, 209, 220;
+  --color-header-link: #c0d1dc;
+  --rgb-header-link: 192, 209, 220;
+  --color-footer-link: #c0d1dc;
+  --rgb-footer-link: 192, 209, 220;
+  --color-footer-copy: #c0d1dc;
+  --rgb-footer-copy: 192, 209, 220;
+  --color-box-default-bg: #5b6e7e;
+  --rgb-box-default-bg: 91, 110, 126;
+  --color-box-success-bg: #336c91;
+  --rgb-box-success-bg: 51, 108, 145;
+  --color-box-warning-bg: #d3ae63;
+  --rgb-box-warning-bg: 211, 174, 99;
+  --color-demo-box-title: #6180a3;
+  --rgb-demo-box-title: 97, 128, 163;
+  --color-editor-bg: #171b25;
+  --rgb-editor-bg: 23, 27, 37;
+  --color-editor-border: #334155;
+  --rgb-editor-border: 51, 65, 85;
+  --color-editor-highlight: #75b1ff;
+  --rgb-editor-highlight: 117, 177, 255;
+  --color-code-bg: #dfefff;
+  --rgb-code-bg: 223, 239, 255;
+  --color-logo-gh: #6e5494;
+  --rgb-logo-gh: 110, 84, 148;
+  --color-logo-tw: #1da1f2;
+  --rgb-logo-tw: 29, 161, 242;
+  --color-logo-ig: #cd486b;
+  --rgb-logo-ig: 205, 72, 107;
+  --color-lang-js: #ffd600;
+  --rgb-lang-js: 255, 214, 0;
+  --color-lang-html: #ff8c0b;
+  --rgb-lang-html: 255, 140, 11;
+  --color-lang-css: #2ea8ff;
+  --rgb-lang-css: 46, 168, 255;
+  --color-lang-scss: #c69;
+  --rgb-lang-scss: 204, 102, 153;
+  --color-lang-jsx: #82f3ff;
+  --rgb-lang-jsx: 130, 243, 255;
+  --color-editor-red: #ff5f57;
+  --rgb-editor-red: : 255, 95, 87;
+  --color-editor-yellow: #febc2e;
+  --rgb-editor-yellow: 254, 188, 46;
+  --color-editor-green: #28c840;
+  --rgb-editor-green: 40, 200, 64;
+  --color-error: #f10000;
+  --rgb-error: 241, 0, 0;
 }
 
 /* Light theme via class (for user preference) */
 :root[data-theme="light"] {
-  --background: #ffffff;
+  --background: #fff;
   --foreground: #171717;
+  --border-color: #eaeaea;
+  --hover-color: #666;
+  --code-background: #f5f5f5;
+  --code-foreground: #333;
+  --blockquote-background: #f8f8f8;
+  --blockquote-border: #ddd;
+  --link-color: #0066cc;
+  --link-hover: #004499;
+
+  --color-dark: #1a1d24;
+  --rgb-dark: 26, 29, 36;
+  --color-light: #fff;
+  --rgb-light: 255, 255, 255;
+  --color-text: #191c22;
+  --rgb-text: 25, 28, 34;
+  --color-white: #fff;
+  --rgb-white: 255, 255, 255;
+  --color-header-bg: #f5f7fa;
+  --rgb-header-bg: 245, 247, 250;
+  --color-bg: #f7faff;
+  --rgb-bg: 247, 250, 255;
+  --color-main-bg: #fff;
+  --rgb-main-bg: 255, 255, 255;
+  --color-border: #eaeaea;
+  --rgb-border: 234, 234, 234;
+  --color-main: #0070f3;
+  --rgb-main: 0, 112, 243;
+  --color-main-dark-01: #4a5568;
+  --rgb-main-dark-01: 74, 85, 104;
+  --color-main-dark-02: #718096;
+  --rgb-main-dark-02: 113, 128, 150;
+  --color-card-time: #6b7280;
+  --rgb-card-time: 107, 114, 128;
+  --color-card-excerpt: #9ca3af;
+  --rgb-card-excerpt: 156, 163, 175;
+  --color-nav-link: #374151;
+  --rgb-nav-link: 55, 65, 81;
+  --color-header-link: #374151;
+  --rgb-header-link: 55, 65, 81;
+  --color-footer-link: #374151;
+  --rgb-footer-link: 55, 65, 81;
+  --color-footer-copy: #6b7280;
+  --rgb-footer-copy: 107, 114, 128;
+  --color-box-default-bg: #e5e7eb;
+  --rgb-box-default-bg: 229, 231, 235;
+  --color-box-success-bg: #d1fae5;
+  --rgb-box-success-bg: 209, 250, 229;
+  --color-box-warning-bg: #fef3c7;
+  --rgb-box-warning-bg: 254, 243, 199;
+  --color-demo-box-title: #2563eb;
+  --rgb-demo-box-title: 37, 99, 235;
+  --color-editor-bg: #f3f4f6;
+  --rgb-editor-bg: 243, 244, 246;
+  --color-editor-border: #e5e7eb;
+  --rgb-editor-border: 229, 231, 235;
+  --color-editor-highlight: #0070f3;
+  --rgb-editor-highlight: 0, 112, 243;
+  --color-code-bg: #f5f7fa;
+  --rgb-code-bg: 245, 247, 250;
+  --color-logo-gh: #6e5494;
+  --rgb-logo-gh: 110, 84, 148;
+  --color-logo-tw: #1da1f2;
+  --rgb-logo-tw: 29, 161, 242;
+  --color-logo-ig: #cd486b;
+  --rgb-logo-ig: 205, 72, 107;
+  --color-lang-js: #ffd600;
+  --rgb-lang-js: 255, 214, 0;
+  --color-lang-html: #ff8c0b;
+  --rgb-lang-html: 255, 140, 11;
+  --color-lang-css: #2ea8ff;
+  --rgb-lang-css: 46, 168, 255;
+  --color-lang-scss: #c69;
+  --rgb-lang-scss: 204, 102, 153;
+  --color-lang-jsx: #0070f3;
+  --rgb-lang-jsx: 0, 112, 243;
+  --color-editor-red: #ff5f57;
+  --rgb-editor-red: 255, 95, 87;
+  --color-editor-yellow: #febc2e;
+  --rgb-editor-yellow: 254, 188, 46;
+  --color-editor-green: #28c840;
+  --rgb-editor-green: 40, 200, 64;
+  --color-error: #f10000;
+  --rgb-error: 241, 0, 0;
 }
 
+/* Base styles */
 html,
 body {
   max-width: 100vw;
@@ -61,24 +241,38 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 a {
-  color: inherit;
+  color: var(--link-color);
   text-decoration: none;
+  transition: color 0.2s ease;
 }
 
-@media (prefers-color-scheme: dark) {
-  html {
-    color-scheme: dark;
-  }
-}
-h2 {
-  font-size: 2rem;
-}
-h3 {
-  font-size: 1.75rem;
+a:hover {
+  color: var(--link-hover);
 }
 
-p {
-  margin-bottom: 1rem;
+/* Code blocks */
+code, pre {
+  font-family: var(--font-fira-code);
+  background: var(--code-background);
+  color: var(--code-foreground);
+  padding: 0.2em 0.4em;
+  border-radius: 3px;
+}
+
+pre {
+  padding: 1em;
+  overflow-x: auto;
+  border: 1px solid var(--border-color);
+  border-radius: 6px;
+}
+
+/* Blockquotes */
+blockquote {
+  background: var(--blockquote-background);
+  border-left: 4px solid var(--blockquote-border);
+  margin: 1.5em 0;
+  padding: 1em 1.5em;
+  font-style: italic;
 }
 
 /* Layout */
@@ -90,9 +284,14 @@ p {
 
 /* Header */
 .header {
+  flex: 0 0 auto;
   height: var(--header-height);
   border-bottom: 1px solid var(--border-color);
   padding: 0 2rem;
+  background: var(--background);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
 }
 
 .header nav {
@@ -115,12 +314,26 @@ p {
   color: var(--hover-color);
 }
 
+/* Main content */
+.main-content {
+  flex: 1 0 auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
 /* Footer */
 .footer {
+  flex: 0 0 auto;
   height: var(--footer-height);
   border-top: 1px solid var(--border-color);
-  padding: 2rem;
+  padding: 1rem;
   margin-top: auto;
+  background: var(--background);
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 .footer-content {
@@ -142,9 +355,4 @@ p {
   color: var(--hover-color);
   font-size: 0.9rem;
   font-family: var(--font-outfit);
-}
-
-/* Code Blocks */
-code, pre {
-  font-family: var(--font-fira-code);
 }
