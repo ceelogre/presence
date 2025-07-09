@@ -257,7 +257,7 @@ code, pre {
   color: var(--code-foreground);
   padding: 0.2em 0.4em;
   border-radius: 3px;
-}
+  }
 
 pre {
   padding: 1em;
