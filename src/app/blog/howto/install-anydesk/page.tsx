@@ -15,7 +15,7 @@ export default function AnyDeskArticle() {
             <h1>How to install Anydesk without apt package manager</h1>
             <p>Most softwares are available for linux; you just need to know the right way to install them. One of the quickest way to do it is by using a repository manager like apt for .deb and yum/dnf for .rpm</p>
             <p>In this demo, I&apos;m going to install Anydesk.</p>
-            <p>Anydesk is a remote desktop software that allows you to control your computer from another device. It&apos;s available for Linux, Windows, and Mac but the problem is that it&apos;s not available in the default repositories for all distributions (after all they have limited resources and there's only so much time/effort they can allocate to supporting every distro in existence).</p>
+            <p>Anydesk is a remote desktop software that allows you to control your computer from another device. It&apos;s available for Linux, Windows, and Mac but the problem is that it&apos;s not available in the default repositories for all distributions (after all they have limited resources and there&apos;s only so much time/effort they can allocate to supporting every distro in existence).</p>
             <p>The first thing to do is to add the software key which allows the operating system to verify the authenticity of the publisher and many other things I do not know.</p>
             <p>You may see online a lot of lines like this: </p>
             <TerminalBlock>
