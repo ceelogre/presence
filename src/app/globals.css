@@ -3,23 +3,6 @@
   --font-outfit: var(--font-outfit);
   --font-merriweather: var(--font-merriweather);
   --font-fira-code: var(--font-fira-code);
-
-  /* Layout Variables */
-  --max-width: 1200px;
-  --header-height: 60px;
-  --footer-height: 60px;
-
-  /* Color Variables - Light theme (default) */
-  --background: #ffffff;
-  --foreground: #171717;
-  --border-color: #eaeaea;
-  --hover-color: #666;
-  --code-background: #f5f5f5;
-  --code-foreground: #333;
-  --blockquote-background: #f8f8f8;
-  --blockquote-border: #ddd;
-  --link-color: #0066cc;
-  --link-hover: #004499;
 }
 
 /* Dark theme via media query */
@@ -288,7 +271,6 @@ blockquote {
   height: var(--header-height);
   border-bottom: 1px solid var(--border-color);
   padding: 0 2rem;
-  background: var(--background);
   display: flex;
   align-items: center;
   justify-content: space-between;
