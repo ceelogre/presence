@@ -4,6 +4,8 @@ export default function Work() {
   return (
     <div className={styles.work}>
       <h1>Work</h1>
+      <p>Coming soon...</p>
+      /**
       <div className={styles.workGrid}>
         <article className={styles.workCard}>
           <h2>Project One</h2>
@@ -24,6 +26,7 @@ export default function Work() {
           </div>
         </article>
       </div>
+      */
     </div>
   );
 } 
