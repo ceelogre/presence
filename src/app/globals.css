@@ -23,7 +23,7 @@
 
 /* Dark theme via class (for user preference) */
 :root[data-theme="dark"] {
-  --background: #181a1b;
+  --background: #23272f;
   --foreground: #ededed;
   --border-color: #2a2a2a;
   --hover-color: #999;
