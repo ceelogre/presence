@@ -21,11 +21,7 @@ export function ThemeProvider({ children }: { children: React.ReactNode }) {
     const savedTheme = localStorage.getItem('theme') as Theme;
     if (savedTheme) {
       setTheme(savedTheme);
-      if (savedTheme !== 'system') {
         document.documentElement.setAttribute('data-theme', savedTheme);
-      } else {
-        document.documentElement.removeAttribute('data-theme');
-      }
     } else {
       // If no saved preference, check system preference
       const systemTheme = window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light';
@@ -35,16 +31,11 @@ export function ThemeProvider({ children }: { children: React.ReactNode }) {
   }, []);
 
   const toggleTheme = () => {
-    const newTheme = theme === 'system' ? 'dark' : theme === 'dark' ? 'light' : 'system';
+    const newTheme = theme === 'dark' ? 'light' : 'dark';
     setTheme(newTheme);
-    
-    if (newTheme === 'system') {
-      document.documentElement.removeAttribute('data-theme');
-      localStorage.removeItem('theme');
-    } else {
-      document.documentElement.setAttribute('data-theme', newTheme);
-      localStorage.setItem('theme', newTheme);
-    }
+  
+    document.documentElement.setAttribute('data-theme', newTheme);
+    localStorage.setItem('theme', newTheme);
   };
 
   // Prevent flash of wrong theme
