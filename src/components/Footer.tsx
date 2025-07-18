@@ -3,10 +3,10 @@ export default function Footer() {
     <footer className="footer">
       <div className="footer-content">
         <div className="copyright">
-          © {new Date().getFullYear()} Samuel Nishimwe. All rights reserved.
+          <span>© {new Date().getFullYear()} Samuel Nishimwe. All rights reserved.</span>
         </div>
         <div className="footer-message">
-            <p>Made with ❤️ in Kigali</p>
+            <span>Made with ❤️ in Kigali</span>
         </div>
       </div>
     </footer>
