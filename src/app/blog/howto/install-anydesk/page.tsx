@@ -4,7 +4,7 @@ import TerminalBlock from '@/components/TerminalBlock'
 export default function AnyDeskArticle() {
     const addKeyCommand = `wget -qO - https://keys.anydesk.com/repos/DEB-GPG-KEY | apt-key add -`
     const addKeyCommandSecure = `wget -qO - https://keys.anydesk.com/repos/DEB-GPG-KEY | gpg --dearmor | sudo tee /usr/share/keyrings/anydesk-archive-keyring.gpg > /dev/null`
-    const addSourceCommand = `echo "deb [signed-by=/usr/share/keyrings/anydesk-archive-keyring.gpg] https://deb.anydesk.com/ all main&quot; | sudo tee /etc/apt/sources.list.d/anydesk-stable.list`
+    const addSourceCommand = `echo "deb [signed-by=/usr/share/keyrings/anydesk-archive-keyring.gpg] https://deb.anydesk.com/ all main" | sudo tee /etc/apt/sources.list.d/anydesk-stable.list`
     const updateCommand = `sudo apt update`
     const installCommand = `sudo apt install anydesk`
     const purgeCommand = `sudo apt purge anydesk`
