@@ -1,4 +1,3 @@
-import styles from './manipulation.module.css';
 import TerminalBlock from '@/components/TerminalBlock'
 import { Metadata } from 'next';
 
@@ -9,7 +8,7 @@ export const metadata: Metadata = {
 
 function BashManipulation() {
     return (
-      <div className={styles.container}>
+      <div>
         <h2> Bash output manipulation</h2>
         <p>I had issues with starting my postgres server and so, naturally I look up the documentation. While browsing through, I came across a command that looks almost familiar.</p>
         <TerminalBlock>

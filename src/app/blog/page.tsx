@@ -36,6 +36,11 @@ export default function Blog() {
       title: "Bash output manipulation",
       description: "A guide to manipulate bash output",
       href: "/blog/bash-manipulation"
+    },
+    {
+      title: "Installing Beyond Identity",
+      description: "How to install Beyond Identity on Kali Linux",
+      href: "/blog/beyond-identity"
     }
   ];
 
