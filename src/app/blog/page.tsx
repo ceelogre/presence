@@ -41,6 +41,11 @@ export default function Blog() {
       title: "Installing Beyond Identity",
       description: "How to install Beyond Identity on Kali Linux",
       href: "/blog/beyond-identity"
+    },
+    {
+      title: "Changing remote",
+      description: "How to change the remote origin of a repo",
+      href: "/blog/howto/change-git-remote"
     }
   ];
 
