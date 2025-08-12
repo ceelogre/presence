@@ -31,6 +31,11 @@ export default function Blog() {
       title: "My favorite songs",
       description: "A collection of my favorite songs per artist",
       href: "/blog/favorites/music"
+    },
+    {
+      title: "Bash output manipulation",
+      description: "A guide to manipulate bash output",
+      href: "/blog/bash-manipulation"
     }
   ];
 
