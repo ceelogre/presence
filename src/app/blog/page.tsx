@@ -1,4 +1,24 @@
+import { Metadata } from 'next';
 import CardList from '../../components/CardList';
+import styles from './blog.module.css';
+
+/**
+ * Blog page
+ * @returns {JSX.Element}
+ */
+const title = "Blog";
+const description = "Welcome to my Articles collection. They represent a wide variety of interests but most are technical. Take a pick.";
+
+export const metadata: Metadata = {
+  title: {
+    template: `%s - ${title}`,
+    default: title
+  },
+  description: "This is the blog page with all my articles",
+  icons: {
+    icon: '/eyelids.svg',
+  },
+};
 
 export default function Blog() {
   const articles = [
@@ -16,8 +36,10 @@ export default function Blog() {
 
   return (
     <div className="blog">
-      <h1>Thoughts</h1>
-      <p>The articles here are mostly technical</p>
+      <div className={styles.blogHeader}>
+        <h1>{title}</h1>
+        <p>{description}</p>
+      </div>
       <CardList cards={articles} />
     </div>
   );

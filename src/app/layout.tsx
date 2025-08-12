@@ -27,7 +27,7 @@ const firaCode = Fira_Code({
 export const metadata: Metadata = {
   title: {
     template: "%s - Samuel Nishimwe",
-    default: "Samuel Nishimwe"
+    default: "Welcome - Samuel Nishimwe"
   },
   description: "My personal website",
   icons: {
