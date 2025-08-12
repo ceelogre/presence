@@ -33,14 +33,14 @@ const ChangingRemote = () => {
         <TerminalBlock> git remote rename old_uri new_uri </TerminalBlock> 
         <p>But I was hit with an error</p>
         <TerminalBlock> fatal: remote is not available</TerminalBlock>
-        <p>At that point, I knew that it's probably used to change remote names like origin not the actual URI.</p>
+        <p>At that point, I knew that it&apos;s probably used to change remote names like origin not the actual URI.</p>
 
         <p>After a couple of trial and errors while running through git remote manual, I  eventually came across the command that I was looking for:</p>
           <TerminalBlock>git remote set-url --push name new_uri</TerminalBlock>
 
         <p>There are other options like <code> --delete </code> which could do half of what I was looking for (removing the pointer to the remote uri) but the command above achieves the desired result in one line.</p>
 
-        <p>Next time I come across this, I'll just lie to myself that I will remember how to do it without looking up this article.</p>
+        <p>Next time I come across this, I&apos;ll just lie to myself that I will remember how to do it without looking up this article.</p>
           </div>
     )
 }
