@@ -5,7 +5,7 @@ const AuthorReset = () => {
     return (
         <div>
             <h1>Git reset author</h1>
-            <p>As it turns out, you can reset the author a commit. I learned about this a few days ago while comitting from a new machine that I haven't setup the authors.</p>
+            <p>As it turns out, you can reset the author a commit. I learned about this a few days ago while comitting from a new machine that I haven&apos;t setup the authors.</p>
             <Image 
                 src='/assets/git-reset-author.png' 
                 alt="A screenshot of git reset author message"
