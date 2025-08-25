@@ -27,7 +27,7 @@ const firaCode = Fira_Code({
 export const metadata: Metadata = {
   title: {
     template: "%s - Samuel Nishimwe",
-    default: "Samuel Nishimwe"
+    default: "Welcome - Samuel Nishimwe"
   },
   description: "My personal website",
   icons: {
@@ -47,7 +47,9 @@ export default function RootLayout({
           <div className="layout">
             <Header />
             <main className="main-content">
+              <div className="container">
               {children}
+              </div>
             </main>
             <Footer />
           </div>
