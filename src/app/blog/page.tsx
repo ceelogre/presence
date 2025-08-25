@@ -46,6 +46,9 @@ export default function Blog() {
       title: "Changing remote",
       description: "How to change the remote origin of a repo",
       href: "/blog/howto/change-git-remote"
+    },
+    {
+     href: "/blog/howto/heroku" 
     }
   ];
 
