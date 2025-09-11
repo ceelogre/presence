@@ -24,7 +24,7 @@ export default function Blog() {
   const articles = [
     {
       title: "How to install a software unavailable with apt",
-      description: "A guide to install a software that's not the package manager",
+      description: "A guide to install a software that's not in the package manager repository",
       href: "/blog/howto/install-anydesk/"
     },
     {
@@ -34,7 +34,7 @@ export default function Blog() {
     },
     {
       title: "Bash output manipulation",
-      description: "A guide to manipulate bash output",
+      description: "A guide to manipulating bash output",
       href: "/blog/bash-manipulation"
     },
     {
