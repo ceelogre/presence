@@ -8,7 +8,7 @@ const HerokuConfig = () => (
       </p>
       <TerminalBlock>npm i mocha</TerminalBlock>
       <p>Add its configuuration to <code>package.json</code></p>
-      <p> From here, I attempted to run test and ran into an issue. I had an import assert error :
+      <p> From here, I attempted to run test and ran into an issue. I had an import assert error :</p><p>
       <TerminalBlock> can not use import outside of a module</TerminalBlock> After a bit of search, I found out that you can just add <code>type: module</code> to your <code>package.json</code> and mocha will not complain. I did this and the tests passed. I went on to configure travis ci and codeclimate which was just  a blaze: add <code>.travis.yml </code>and the likes, get the reporter id from cc and and boom! my test were passing. I went on to install <code>nyc</code>, give reporter flags and that was easy.</p>
       
     <p>Now I attempted a heroku deploy which was created the right way cause I added a build script to be ran by babel/cli in the deployment phase. This already helps with waiting for the app to build while browsing. Then I was hit with a weird error, after creating a build dir, there were commonjs files which were still being treated as modules according to package.json. What I did? Remove the config and rename the test file extension to <code> .mjs</code> Heroku doesn&apos;t complain anymore.</p>
