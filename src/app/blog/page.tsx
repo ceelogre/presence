@@ -48,7 +48,9 @@ export default function Blog() {
       href: "/blog/howto/change-git-remote"
     },
     {
-     href: "/blog/howto/heroku" 
+     title: "Nodejs deployment on Heroku",
+     description: "How to deploy and run tests successfully of an app on Heroku",
+     href: "/blog/howto/heroku"
     }
   ];
 
