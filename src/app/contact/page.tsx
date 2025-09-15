@@ -1,5 +1,4 @@
 'use client'
-import './meta'
 import styles from './contact.module.css';
 import { addContact} from './firebase';
 import type { Contact } from './firebase';
