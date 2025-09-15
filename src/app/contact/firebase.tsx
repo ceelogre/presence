@@ -10,9 +10,7 @@ export interface Contact {
 
 export const addContact = async (contact: Contact) => {
     try {
-        console.info("Idea", contact)
         const docRef = await addDoc(collection(db, 'contacts'), contact)
-        console.info(docRef)
         return docRef.id
     } catch (error) {
         console.error("Broken, ", error)
