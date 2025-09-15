@@ -1,33 +1,28 @@
+'use client'
+import './meta'
 import styles from './contact.module.css';
-import { Metadata } from 'next';
-import { addContact } from './firebase';
+import { addContact} from './firebase';
+import type { Contact } from './firebase';
 import { useState } from 'react';
 
-const [value, setValue] = useState("")
-const [result, setResult] = useState("")
 
 
-const title = "Contact";
-const description = "This is the contact page";
-
-export const metadata: Metadata = {
-  title: {
-    template: `%s - ${title}`,
-    default: title
-  },
-  description,
-};
-
-const handleMove = (e: React.FormEvent<HTMLFormElement>) => {
-  setValue(e.target.value)
-  setResult("")
-
-  }
-const handleSubmit = (e: React.FormEvent<HTMLFormElement>) =>  {
-  e.preventDefault()
-
-}
 export default function Contact() {
+
+  const [name, setName] = useState("")
+  const [message, setMessage] = useState("")
+  const [email, setEmail] = useState("")
+  
+  const handleSubmit = async (e: React.FormEvent<HTMLFormElement>) =>  {
+    e.preventDefault()
+    const contact: Contact = {
+      name,
+      message,
+      email,
+      createdAt: new Date()
+    }
+    await addContact(contact)
+  }
   return (
     <div className={styles.contact}>
       <h1>Contact</h1>
@@ -38,15 +33,15 @@ export default function Contact() {
         <form className={styles.contactForm} onSubmit={handleSubmit}>
           <div className={styles.formGroup}>
             <label htmlFor="name">Name</label>
-            <input type="text" id="name" name="name" onChange={handleMove}required />
+            <input type="text" onChange={(e) => { setName(e.currentTarget.value)} } required />
           </div>
           <div className={styles.formGroup}>
             <label htmlFor="email">Email</label>
-            <input type="email" id="email" name="email" required />
+            <input type="email" onChange={(e) => { setEmail(e.currentTarget.value)} } required />
           </div>
           <div className={styles.formGroup}>
             <label htmlFor="message">Message</label>
-            <textarea id="message" name="message" rows={5} required></textarea>
+            <textarea onChange={ (e) => { setMessage(e.currentTarget.value) } } rows={5} required></textarea>
           </div>
           <button type="submit" className={styles.submitButton}>Send Message</button>
         </form>
