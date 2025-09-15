@@ -115,6 +115,10 @@ export default function Favorites() {
             artist: 'Kelly Rowland',
             song: 'Like this',
             feat: 'Eve'
+        },
+        {
+            artist: 'Twenty One Pilots',
+            song: 'Heathens'
         }
     ]
 
