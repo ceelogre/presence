@@ -34,7 +34,7 @@ export default function Blog() {
     },
     {
       title: "Bash output manipulation",
-      description: "A guide to manipulate bash output",
+      description: "A guide to manipulating bash output",
       href: "/blog/bash-manipulation"
     },
     {
@@ -46,6 +46,11 @@ export default function Blog() {
       title: "Changing remote",
       description: "How to change the remote origin of a repo",
       href: "/blog/howto/change-git-remote"
+    },
+    {
+     title: "Nodejs deployment on Heroku",
+     description: "How to deploy and run tests successfully of an app on Heroku",
+     href: "/blog/howto/heroku"
     }
   ];
 
