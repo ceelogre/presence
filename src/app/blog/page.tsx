@@ -51,6 +51,11 @@ export default function Blog() {
      title: "Nodejs deployment on Heroku",
      description: "How to deploy and run tests successfully of an app on Heroku",
      href: "/blog/howto/heroku"
+    },
+    {
+      title: "Bash output redirection ",
+      description: "A guide to redirecting bash output",
+      href: "/blog/bash-output-redirect"
     }
   ];
 
