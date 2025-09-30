@@ -1,0 +1,9 @@
+const changeVT = () => {
+    return (
+        <div>
+        I was in tthe middle of a script when my computer froze.
+        I ran a script with rofi -dmenu results … -select $results Now the computer has frozen. My cursor is moving but has a resize shape around the terminal. A apart from that nothing else works.
+        Since the cursor was moving, I had hope that I could revive the system. This did not look like the usual freeze. I searched on possible solutions and found that I  could just switct to tty then kill the process.
+        I did  Switched to tty4 but after killing the process, switching back to gnome failed. It seemed the bindings for ctrl-alt-f4 were not working. I was sure this would work since system stattus display-manager showed that gnome was still and up and running fine. Up on further research, I found that I can view which tty my gui runs on by using the w command. This showed that it was on tty2, ctrl-alt-f2 didn't work, neither alt-f2 and so forth. Then I learned of a new command chvt. Since I knew where gui was running, sudo chvt 2 took me back to my gui working fine.
+    )
+}
