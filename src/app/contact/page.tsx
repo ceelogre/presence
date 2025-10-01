@@ -1,5 +1,10 @@
 import ContactClient from './ContactClient';
-export { metadata } from './meta';
+import { createMetadata } from '@/lib/metadata';
+
+export const metadata = createMetadata({
+  title: 'Contact',
+  description: 'Contact me',
+});
 
 export default function ContactPage() {
   return <ContactClient />
