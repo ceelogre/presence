@@ -1,5 +1,6 @@
 import Link from 'next/link';
 import styles from './work.module.css';
+import Button from '@/components/Button';
 
 export default function Work() {
   return (
@@ -10,7 +11,7 @@ export default function Work() {
           <h2>Spotlight Calculator</h2>
           <p>A simple Linux calculator that uses the Mac Spotlight-style interface.</p>
           <Link href="https://github.com/ceelogre/spotlight-calculator" target="_blank">
-            <button>View on GitHub</button>
+            <Button>View on GitHub</Button>
           </Link>
         </article>
       </div>
