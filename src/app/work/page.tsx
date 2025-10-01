@@ -1,32 +1,19 @@
+import Link from 'next/link';
 import styles from './work.module.css';
 
 export default function Work() {
   return (
     <div className={styles.work}>
-      <h1>Work</h1>
-      <p>Coming soon...</p>
-      {/**
+      <h1>Projects</h1>
       <div className={styles.workGrid}>
         <article className={styles.workCard}>
-          <h2>Project One</h2>
-          <p>A brief description of the project and its impact.</p>
-          <div className={styles.techStack}>
-            <span>React</span>
-            <span>Node.js</span>
-            <span>TypeScript</span>
-          </div>
-        </article>
-        <article className={styles.workCard}>
-          <h2>Project Two</h2>
-          <p>Another project showcasing different skills and technologies.</p>
-          <div className={styles.techStack}>
-            <span>Next.js</span>
-            <span>Python</span>
-            <span>AWS</span>
-          </div>
+          <h2>Spotlight Calculator</h2>
+          <p>A simple Linux calculator that uses the Mac Spotlight-style interface.</p>
+          <Link href="https://github.com/ceelogre/spotlight-calculator" target="_blank">
+            <button>View on GitHub</button>
+          </Link>
         </article>
       </div>
-      */}
     </div>
   );
 } 
