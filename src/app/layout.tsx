@@ -31,7 +31,7 @@ export const metadata: Metadata = {
   },
   description: "My personal website",
   icons: {
-    icon: '/eyelids.svg',
+    icon: '/favicon.png',
   },
 };
 

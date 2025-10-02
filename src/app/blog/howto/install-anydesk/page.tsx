@@ -1,5 +1,11 @@
 import styles from './anydesk.module.css';
 import TerminalBlock from '@/components/TerminalBlock'
+import { createMetadata } from '@/lib/metadata';
+
+export const metadata = createMetadata({
+  title: "How to install Anydesk",
+  description: "How to install Anydesk without apt package manager",
+});
 
 export default function AnyDeskArticle() {
     const addKeyCommand = `wget -qO - https://keys.anydesk.com/repos/DEB-GPG-KEY | apt-key add -`

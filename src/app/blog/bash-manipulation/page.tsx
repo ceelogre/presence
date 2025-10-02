@@ -1,10 +1,10 @@
 import TerminalBlock from '@/components/TerminalBlock'
-import { Metadata } from 'next';
+import { createMetadata } from '@/lib/metadata';
 
-export const metadata: Metadata = {
+export const metadata = createMetadata({
   title: 'Bash output manipulation',
   description: 'A guide to manipulating bash output',
-}
+});
 
 function BashManipulation() {
     return (

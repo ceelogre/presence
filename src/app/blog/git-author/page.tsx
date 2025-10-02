@@ -1,5 +1,11 @@
 import Image from 'next/image';
 import TerminalBlock from '@/components/TerminalBlock';
+import { createMetadata } from '@/lib/metadata';
+
+export const metadata = createMetadata({
+  title: "Git reset author",
+  description: "A guide to resetting the author of a commit",
+});
 
 const AuthorReset = () => {
     return (

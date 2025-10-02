@@ -1,4 +1,4 @@
-import { Metadata } from 'next';
+import { createMetadata } from '@/lib/metadata';
 import CardList from '../../components/CardList';
 import styles from './blog.module.css';
 
@@ -9,16 +9,10 @@ import styles from './blog.module.css';
 const title = "Blog";
 const description = "Welcome to my Articles collection. They represent a wide variety of interests but most are technical. Take a pick.";
 
-export const metadata: Metadata = {
-  title: {
-    template: `%s - ${title}`,
-    default: title
-  },
-  description: "This is the blog page with all my articles",
-  icons: {
-    icon: '/eyelids.svg',
-  },
-};
+export const metadata = createMetadata({
+  title,
+  description,
+});
 
 export default function Blog() {
   const articles = [
@@ -43,6 +37,11 @@ export default function Blog() {
       href: "/blog/beyond-identity"
     },
     {
+      title: "Git reset author",
+      description: "A guide to resetting the author of a commit",
+      href: "/blog/git-author"
+    },
+    {
       title: "Changing remote",
       description: "How to change the remote origin of a repo",
       href: "/blog/howto/change-git-remote"
@@ -51,6 +50,11 @@ export default function Blog() {
      title: "Nodejs deployment on Heroku",
      description: "How to deploy and run tests successfully of an app on Heroku",
      href: "/blog/howto/heroku"
+    },
+    {
+    title: "Bash output redirection",
+    description: "A guide to redirecting bash output",
+    href: "/blog/bash-output-redirect"
     }
   ];
 
