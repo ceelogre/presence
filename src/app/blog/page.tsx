@@ -42,6 +42,11 @@ export default function Blog() {
       href: "/blog/git-author"
     },
     {
+      title: "My favorite movies",
+      description: "A collection of movies that have made an impact on my eyes over the years.",
+      href: "/blog/favorites/movies"
+    },
+    {
       title: "Changing remote",
       description: "How to change the remote origin of a repo",
       href: "/blog/howto/change-git-remote"
