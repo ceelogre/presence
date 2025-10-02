@@ -1,16 +1,11 @@
-import {Metadata} from 'next'
+import { createMetadata } from '@/lib/metadata';
 import TerminalBlock from '@/components/TerminalBlock'
 
-const title= "Changing git remote"
-const description= "How to change the remote origin of a repo"
+export const metadata = createMetadata({
+  title: "Changing git remote",
+  description: "How to change the remote origin of a repo",
+});
 
-export const metadata: Metadata = {
-  title: {
-    template: `%s - ${title}`,
-    default: title
-  },
-  description,
-}
 const ChangingRemote = () => {
   return (
     <div>

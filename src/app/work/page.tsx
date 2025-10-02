@@ -1,6 +1,12 @@
 import Link from 'next/link';
 import styles from './work.module.css';
 import Button from '@/components/Button';
+import { createMetadata } from '@/lib/metadata';
+
+export const metadata = createMetadata({
+  title: "Work",
+  description: "My work experience",
+});
 
 export default function Work() {
   return (

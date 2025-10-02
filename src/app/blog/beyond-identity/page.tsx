@@ -1,21 +1,15 @@
-import { Metadata } from "next";
+import { createMetadata } from "@/lib/metadata";
+
+export const metadata = createMetadata({
+  title: "How to install Beyond Identity",
+  description: "How to install Beyond Identity on Linux Kali",
+});
+
 /**
  * Beyond Identity article page
  * @returns {JSX.Element}
  */
-const title = "How to install Beyond Identity";
-const description = "How to install Beyond Identity on Linux Kali"
 
-export const metadata: Metadata = {
-  title: {
-    template: `%s - ${title}`,
-    default: title
-  },
-  description,
-  icons: {
-    icon: '/eyelids.svg',
-  },
-};
 const BiArticle = () => {
   return (
     <div>
