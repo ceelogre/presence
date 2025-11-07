@@ -1,4 +1,5 @@
 import styles from './MovieCard.module.css';
+import Image from 'next/image';
 
 interface Movie {
   title: string;
@@ -23,11 +24,13 @@ export default function MovieCard({ movie, onClick }: MovieCardProps) {
     <article className={styles.movieCard} onClick={onClick}>
       <div className={styles.imageContainer}>
         {movie.image ? (
-          <img 
-            src={movie.image} 
+          <Image 
+            src={movie.image as string} 
             alt={`${movie.title} movie poster`}
             className={styles.movieImage}
             loading="lazy"
+            width={100}
+            height={100}
           />
         ) : (
           <div className={styles.imagePlaceholder}>
