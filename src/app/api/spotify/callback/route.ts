@@ -7,8 +7,33 @@ export async function GET(req: Request) {
     const state = searchParams.get('state')
 
     const error = searchParams.get('error')
-    if (error)
-        return NextResponse.redirect('/')
+    if (error) {
+        return new Response(
+            `
+            <html>
+            <body>
+            <h1>Sorry, you need to grant us access to continue</h1>
+            <p>If you did this on purpose, worry not, this window will close in a few seconds. If it was by mistake, click on login with spotify again.</p>
+            <script>
+            if (window.opener) {
+            
+                window.setTimeout(
+                 () => window.close()
+                , 20000)
+            } else {
+             window.location.href='/'
+             }
+            </script>
+            </body>
+            </html>
+            `,
+            {
+                status: 401,
+                headers: { 'Content-Type': 'text/html' }
+            }
+        )
+
+    }
 
     // Extract codeVerifier from state parameter (format: "state|codeVerifier")
     const codeVerifier = state?.split('|')[1]

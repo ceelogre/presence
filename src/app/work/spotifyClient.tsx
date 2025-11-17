@@ -4,6 +4,7 @@ import { useEffect, useState } from "react"
 import Button from "@/components/Button"
 import SpotifyWidget from "@/components/widgets/spotify/SpotifyWidget";
 import Modal from "@/components/Modal";
+import styles from "./work.module.css";
 
 
 export default function SpotifyClient() {
@@ -41,19 +42,20 @@ export default function SpotifyClient() {
   return (
     <div>
       {isAuthenticated ? (
-        <div>
-          <p>All good! Ready? {' '}
+        <div className={styles.isAuth}>
+          <p className={styles.successMessage}>All good! Ready?</p>
             <Button variant="link" onClick={handleViewTracks}>
               View your top 5 songs
             </Button>
-          </p>
+          
         </div>
       ) : (
-        <p>To get started {' '} 
+        <div>
+        <span>To get started {' '} </span>
           <Button variant="link" onClick={handleAuth}>
             Login with Spotify
           </Button>
-        </p>
+       </div> 
       )}
       
       <Modal 
