@@ -63,3 +63,52 @@
 .techStack span:hover {
   background: var(--hover-color);
 }
+
+.isAuth {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+.successMessage {
+  animation: successFadeIn 2s ease-out;
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.successMessage::before {
+  content: '✓';
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 1.5rem;
+  height: 1.5rem;
+  background: #1DB954;
+  color: white;
+  border-radius: 50%;
+  font-size: 1rem;
+  font-weight: bold;
+  animation: checkmarkPop 0.5s ease-out 0.2s both;
+}
+
+@keyframes successFadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(-10px) scale(0.95);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0) scale(1);
+  }
+}
+
+@keyframes checkmarkPop {
+  from {
+    transform: scale(0);
+    opacity: 0;
+  }
+  to {
+    transform: scale(1);
+    opacity: 1;
+  }
+}

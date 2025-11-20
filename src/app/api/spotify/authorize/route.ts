@@ -39,7 +39,6 @@ export async function GET() {
     url.searchParams.set('code_challenge', codeChallenge);
     url.searchParams.set('code_challenge_method', 'S256');
     
-    console.info("spotify authorize url: ", url.toString())
     const response = NextResponse.redirect(url.toString());
 
     return response;

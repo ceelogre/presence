@@ -72,7 +72,7 @@ export default function SpotifyWidget({ className = '', token }: SpotifyWidgetPr
     return (
       <div className={`${styles.widget} ${className}`}>
         <div className={styles.header}>
-          <h3 className={styles.title}>Your Top 5 Songs</h3>
+          <h3 className={styles.title}>Drumrolls...</h3>
           <div className={styles.spotifyIcon}>♪</div>
         </div>
         <div className={styles.loading}>
@@ -87,7 +87,7 @@ export default function SpotifyWidget({ className = '', token }: SpotifyWidgetPr
     return (
       <div className={`${styles.widget} ${className}`}>
         <div className={styles.header}>
-          <h3 className={styles.title}>Your Top 5 Songs</h3>
+          <h3 className={styles.title}>Sorry, try again</h3>
           <div className={styles.spotifyIcon}>♪</div>
         </div>
         <div className={styles.error}>
@@ -103,7 +103,7 @@ export default function SpotifyWidget({ className = '', token }: SpotifyWidgetPr
   return (
     <div className={`${styles.widget} ${className}`}>
       <div className={styles.header}>
-        <h3 className={styles.title}>Your Top 5 Songs</h3>
+        <h3 className={styles.title}>Your heart at the moment</h3>
         <div className={styles.spotifyIcon}>♪</div>
       </div>
       
@@ -123,7 +123,7 @@ export default function SpotifyWidget({ className = '', token }: SpotifyWidgetPr
         ))}
       </div>
       
-      <div className={styles.footer}>
+      {/* <div className={styles.footer}>
         <a 
           href="https://open.spotify.com"
           target="_blank"
@@ -132,7 +132,7 @@ export default function SpotifyWidget({ className = '', token }: SpotifyWidgetPr
         >
           Open in Spotify
         </a>
-      </div>
+      </div> */}
     </div>
   );
 }
