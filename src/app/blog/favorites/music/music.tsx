@@ -122,6 +122,10 @@ export default function FavoriteMusic() {
             artist: 'Nicki Minaj',
             song: 'Barbie Dreams'
         },
+        {
+            artist: 'Dua Lipa',
+            song: 'Want to'
+        }
     ]
 
   return (
