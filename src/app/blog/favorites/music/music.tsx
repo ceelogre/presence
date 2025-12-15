@@ -129,6 +129,10 @@ export default function FavoriteMusic() {
         {
             artist: "Summer Walker",
             song: "No Love"
+        },
+        {
+            artist: "Waka Flocka Flame",
+            song: "No hands"
         }
     ]
 
