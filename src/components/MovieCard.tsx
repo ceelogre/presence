@@ -16,12 +16,11 @@ interface Movie {
 
 interface MovieCardProps {
   movie: Movie;
-  onClick?: () => void;
 }
 
-export default function MovieCard({ movie, onClick }: MovieCardProps) {
+export default function MovieCard({ movie }: MovieCardProps) {
   return (
-    <article className={styles.movieCard} onClick={onClick}>
+    <article className={styles.movieCard} >
       <div className={styles.imageContainer}>
         {movie.image ? (
           <Image 

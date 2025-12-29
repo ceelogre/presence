@@ -41,6 +41,18 @@ export default function FavoriteMovies() {
             image: "/assets/batman-trilogy.jpg",
             link: "https://www.imdb.com/title/tt0133093/"
         },
+        {
+            title: "Don't breathe",
+            year: "2016",
+            rating: 7.1,
+            description: "A suspenseful horror thriller where a group of friends break into a blind man's house, only to discover he is far more dangerous than he seems.",
+            director: "Fede Álvarez",
+            actors: ["Stephen Lang", "Jane Levy", "Dylan Minnette"],
+            genre: "Horror/Thriller",
+            comment: "As the name suggest, I didn't breathe from the moment robbers entered the house, I was at the sofa edge the entire time. The tension builds brilliantly and Stephen Lang's performance is from out of this world, make the story unforgettable.",
+            image: "/assets/dont-breathe.jpg",
+            link: "https://www.imdb.com/title/tt4160708/"
+        }
     ]
 
   return (
@@ -49,7 +61,6 @@ export default function FavoriteMovies() {
             <MovieCard 
                 key={index} 
                 movie={movie}
-                onClick={() => window.open(movie.link, '_blank')}
             />
         ))}
     </div>
