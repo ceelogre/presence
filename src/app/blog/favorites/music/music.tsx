@@ -133,6 +133,10 @@ export default function FavoriteMusic() {
         {
             artist: "Waka Flocka Flame",
             song: "No hands"
+        },
+        {
+            artist: "King Von",
+            song: "War"
         }
     ]
 
