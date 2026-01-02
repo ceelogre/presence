@@ -1,0 +1,15 @@
+.imageContainer {
+  width: 100%;
+  position: relative;
+  margin: 1.5rem 0;
+  overflow: hidden;
+}
+
+
+
+@media (max-width: 768px) {
+  .imageContainer {
+    margin: 1rem 0;
+  }
+}
+
