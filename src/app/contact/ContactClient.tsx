@@ -90,6 +90,15 @@ export default function ContactClient() {
           <p className={styles.contactIntro}>
             Wanna work together or just get in touch? Feel free to reach out.
           </p>
+          <div>
+            <p>
+              <span>Twitter: <a href='https://twitter.com/ceelogre' target='blank'>@ceelogre</a></span><br />
+              <span>LinkedIn: <a href='https://linkedin.com/in/ceelogre' target='blank'>Samuel Nishimwe</a></span><br />
+              <span>Email: <a href='mailto:whois@duck.com'>whois@duck.com</a></span>
+            </p>
+            </div>
+            <hr />
+            <p className={styles.horizontalLigne}>Or</p>
           <form className={styles.contactForm} onSubmit={handleSubmit}>
             <div className={styles.formGroup}>
               <label htmlFor="name">Name</label>

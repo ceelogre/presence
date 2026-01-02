@@ -60,6 +60,11 @@ export default function Blog() {
     title: "Bash output redirection",
     description: "A guide to redirecting bash output",
     href: "/blog/bash-output-redirect"
+    },
+    {
+      title: 'Date updating with static builds',
+      description: "How to update dates when using build tools",
+      href: "/blog/builds-date-handling"
     }
   ];
 

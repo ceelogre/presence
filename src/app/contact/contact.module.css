@@ -18,6 +18,10 @@
   gap: 1.5rem;
 }
 
+.horizontalLigne {
+  text-align: center;
+}
+
 .formGroup {
   display: flex;
   flex-direction: column;
