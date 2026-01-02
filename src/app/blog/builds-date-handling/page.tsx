@@ -7,6 +7,8 @@ import styles from "./page.module.css"
 const StaticDate = () => {
     return (
         <div>
+            <h1>How to handle Dates when using build tools</h1>
+            <br />
             <p>I was browsing Twitter (Yes! Twitter) on Jan 1, 2026 then came across the usual tweet of updating the year. I thought I have this covered but I quickly checked my site only to find out that it still shows 2025. It was a bit confusing and so, I checked the codebase to see how I&apos;m getting the year.</p>
             <TerminalBlock>
                 new Date().getFullyear()
