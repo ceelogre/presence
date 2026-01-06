@@ -137,6 +137,10 @@ export default function FavoriteMusic() {
         {
             artist: "King Von",
             song: "War"
+        },
+        {
+            artist: "Lana Del Rey",
+            song: "Chemtrails over the country club"
         }
     ]
 
