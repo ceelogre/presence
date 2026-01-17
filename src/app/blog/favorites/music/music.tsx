@@ -141,6 +141,10 @@ export default function FavoriteMusic() {
         {
             artist: "Lana Del Rey",
             song: "Chemtrails over the country club"
+        },
+        {
+            artist: "Bad meets Evil",
+            song: "Fast lane"
         }
     ]
 
