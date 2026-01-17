@@ -65,6 +65,12 @@ export default function Blog() {
       title: 'Date updating with static builds',
       description: "How to update dates when using build tools",
       href: "/blog/builds-date-handling"
+    },
+    {
+      title: "Installing .appImage file",
+      description: "How to install an app image file",
+      href: "/blog/howto/app-image-install"
+      
     }
   ];
 
