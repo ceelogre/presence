@@ -63,10 +63,10 @@ export default function FavoriteMusic() {
         },
         {
             artist: "Juicy J",
-            song: "Bounce",
+            song: "Bandz a make her dance",
             feat: [
-                "Trey Songz",
-                "Wale"
+                "2 Chainz",
+                "Lil wayne"
             ]
         },
         {
