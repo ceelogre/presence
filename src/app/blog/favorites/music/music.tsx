@@ -17,7 +17,7 @@ export default function FavoriteMusic() {
             song: "Candy Paint"
         },
         {
-            artist: "The Chain Smokers",
+            artist: "The Chainsmokers",
             song: "Last day alive"
         },
         {
@@ -145,6 +145,11 @@ export default function FavoriteMusic() {
         {
             artist: "Bad meets Evil",
             song: "Fast lane"
+        },
+        {
+            artist: "Meek Mill",
+            song: "Going bad",
+            feat: "Drake"
         }
     ]
 
