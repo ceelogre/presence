@@ -150,6 +150,11 @@ export default function FavoriteMusic() {
             artist: "Meek Mill",
             song: "Going bad",
             feat: "Drake"
+        },
+        {
+            artist: "2 Chainz",
+            song: "Birthday song",
+            feat: "Kanye West"
         }
     ]
 
