@@ -155,6 +155,10 @@ export default function FavoriteMusic() {
             artist: "2 Chainz",
             song: "Birthday song",
             feat: "Kanye West"
+        },
+        {
+            artist: "M.I.A",
+            song: "Bad girls"
         }
     ]
 
