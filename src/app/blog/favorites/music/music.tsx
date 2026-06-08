@@ -159,6 +159,10 @@ export default function FavoriteMusic() {
         {
             artist: "M.I.A",
             song: "Bad girls"
+        },
+        {
+            artist:"Ice Spice",
+            song: "Baddie baddie"
         }
     ]
 
