@@ -1,4 +1,4 @@
-This is a personal site but I'm open to collaborations. It's bootstraped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+This is a personal site but I'm open to collaboration. It's bootstraped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
 
 ## Getting Started
 
