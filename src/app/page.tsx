@@ -10,7 +10,7 @@ export default function Home() {
         <p className={styles.description}>
           Hi there, I&apos; m Sam, an engineer from Kigali, Rwanda. Nice to meet you :) 
           I build software solutions, lead teams, drive products and write about technology focusing on web development,
-          software architecture, developer experience and automation.
+          software architecture, developer experience and automation.</p><p>
           This is my personal website, here you can find my porfolio and if you have a minute, I also write about my non professional life.
         </p>
       </section>
