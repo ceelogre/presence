@@ -163,6 +163,10 @@ export default function FavoriteMusic() {
         {
             artist:"Ice Spice",
             song: "Baddie baddie"
+        },
+        {
+            artist: "Bryson Tiller",
+            song: "Right My Wrongs"
         }
     ]
 
