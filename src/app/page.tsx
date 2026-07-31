@@ -5,7 +5,7 @@ export default function Home() {
     <div className={styles.home}>
       <section className={styles.hero}>
         <h1>Samuel Nishimwe</h1>
-        <p className={styles.subtitle}>Software & Devops Engineer </p>
+        <p className={styles.subtitle}>Software & Product Engineer </p>
         <h2>I enjoy getting baffled by computers and being amazed at what human brains can accomplish</h2>
         <p className={styles.description}>
           Hi there, I&apos; m Sam, an engineer from Kigali, Rwanda. Nice to meet you :) 
