@@ -18,10 +18,13 @@
 }
 
 .songCard {
+  display: block;
   padding: 1.5rem;
   border: 1px solid var(--border-color);
   border-radius: 8px;
   background: var(--background);
+  text-decoration: none;
+  color: inherit;
   transition: transform 0.2s, box-shadow 0.2s;
 }
 
@@ -48,21 +51,6 @@
   color: var(--hover-color);
   font-size: 0.9rem;
   font-style: italic;
-}
-
-.youtubeLink {
-  display: inline-block;
-  margin-top: 0.75rem;
-  color: var(--foreground);
-  font-size: 0.9rem;
-  text-decoration: none;
-  border-bottom: 1px solid transparent;
-  transition: border-color 0.2s, color 0.2s;
-}
-
-.youtubeLink:hover {
-  color: var(--hover-color);
-  border-bottom-color: var(--hover-color);
 }
 
 @media (max-width: 640px) {

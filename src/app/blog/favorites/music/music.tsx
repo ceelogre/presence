@@ -220,7 +220,13 @@ export default function FavoriteMusic() {
       </p>
       <div className={styles.songList}>
         {favs.map((song, index) => (
-          <div key={index} className={styles.songCard}>
+          <a
+            key={index}
+            href={song.link}
+            target="_blank"
+            rel="noopener noreferrer"
+            className={styles.songCard}
+          >
             <h2 className={styles.artist}>{song.artist}</h2>
             <p className={styles.songTitle}>{song.song}</p>
             {song.feat && (
@@ -228,15 +234,7 @@ export default function FavoriteMusic() {
                 Featuring: {Array.isArray(song.feat) ? song.feat.join(', ') : song.feat}
               </p>
             )}
-            <a
-              href={song.link}
-              target="_blank"
-              rel="noopener noreferrer"
-              className={styles.youtubeLink}
-            >
-              Watch on YouTube →
-            </a>
-          </div>
+          </a>
         ))}
       </div>
     </div>
