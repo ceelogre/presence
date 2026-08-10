@@ -167,6 +167,10 @@ export default function FavoriteMusic() {
         {
             artist: "Bryson Tiller",
             song: "Right My Wrongs"
+        },
+        {
+            artist: "Dlala Thukzin",
+            song: "Mali 2.0"
         }
     ]
 
