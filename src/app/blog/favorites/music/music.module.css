@@ -18,10 +18,13 @@
 }
 
 .songCard {
+  display: block;
   padding: 1.5rem;
   border: 1px solid var(--border-color);
   border-radius: 8px;
   background: var(--background);
+  text-decoration: none;
+  color: inherit;
   transition: transform 0.2s, box-shadow 0.2s;
 }
 
