@@ -5,61 +5,75 @@ interface Song {
   artist: string;
   song: string;
   feat?: string | string[];
+  link: string;
 }
 export default function FavoriteMusic() {
   const favs: Song[] = [
         {
             artist: "Mike Will Made it",
-            song: "23"
+            song: "23",
+            link: "https://www.youtube.com/watch?v=bbEoRnaOIbs"
         },
         {
             artist: "Post Malone",
-            song: "Candy Paint"
+            song: "Candy Paint",
+            link: "https://www.youtube.com/watch?v=mThqhAT2Irk"
         },
         {
             artist: "The Chainsmokers",
-            song: "Last day alive"
+            song: "Last day alive",
+            link: "https://www.youtube.com/watch?v=6b6T0W3aLBg"
         },
         {
             artist: "Petit Biscuit",
-            song: "Drivin Thru the Night"
+            song: "Drivin Thru the Night",
+            link: "https://www.youtube.com/watch?v=ZcTLzwhpMYY"
         },
         {
             artist: "Travis Scott",
-            song: "Highest in the room"
+            song: "Highest in the room",
+            link: "https://www.youtube.com/watch?v=tfSS1e3kYeo"
         },
         {
             artist: "Miley Cyrus",
-            song: "Adore you"
+            song: "Adore you",
+            link: "https://www.youtube.com/watch?v=W1tzURKYFNs"
         },
         {
             artist: "Migos",
-            song: "T-shirt"
+            song: "T-shirt",
+            link: "https://www.youtube.com/watch?v=1VUa99-tJqs"
         },
         {
             artist: "Missy Eliott",
-            song: "Get your freak on"
+            song: "Get your freak on",
+            link: "https://www.youtube.com/watch?v=FPoKiGQzbSQ"
         },
         {
             artist: "Beyonce",
-            song: "Video Phone"
+            song: "Video Phone",
+            link: "https://www.youtube.com/watch?v=CGkvXp0vdng"
         },
         {
             artist: "Lady Gaga",
-            song: "Paparazzi"
+            song: "Paparazzi",
+            link: "https://www.youtube.com/watch?v=d2smz_1L2_0"
         },
         {
             artist: "The Weeknd",
-            song: "Earned it"
+            song: "Earned it",
+            link: "https://www.youtube.com/watch?v=waU75jdUnYw"
         },
         {
             artist: "Bazzi",
-            song: "Young and Alive"
+            song: "Young and Alive",
+            link: "https://www.youtube.com/watch?v=GBFD4Ab3yBY"
         },
         {
             artist: "Cardi B",
             song: "Bodak yellow",
-            feat: "Kodak Black"
+            feat: "Kodak Black",
+            link: "https://www.youtube.com/watch?v=PEGccV-NOm8"
         },
         {
             artist: "Juicy J",
@@ -67,15 +81,18 @@ export default function FavoriteMusic() {
             feat: [
                 "2 Chainz",
                 "Lil wayne"
-            ]
+            ],
+            link: "https://www.youtube.com/watch?v=AI0gk2KJeho"
         },
         {
             artist: "Linkin Park",
-            song: "Roads untraveled"
+            song: "Roads untraveled",
+            link: "https://www.youtube.com/watch?v=KLgQKiUk7ms"
         },
         {
             artist: "PNL",
-            song: "Ryuk"
+            song: "Ryuk",
+            link: "https://www.youtube.com/watch?v=ixMzyhG2xqo"
         },
         {
             artist: "Jack U",
@@ -84,93 +101,114 @@ export default function FavoriteMusic() {
                 "Skrilles",
                 "Diplo",
                 "Justin Bieber"
-            ]
+            ],
+            link: "https://www.youtube.com/watch?v=nntGTK2Fhb0"
         },
         {
             artist: "Afrojack",
             song: "Another life",
             feat: [
                 "David Guetta", "Ester Dean"
-            ]
+            ],
+            link: "https://www.youtube.com/watch?v=ivxPepDyqmI"
         },
         {
             artist: "Tory Lanez",
-            song: "Say it"
+            song: "Say it",
+            link: "https://www.youtube.com/watch?v=xUq1rZ7mmns"
         },
         {
             artist: "T.I",
-            song: "What's up"
+            song: "What's up",
+            link: "https://www.youtube.com/watch?v=c4wefYvqHfc"
         },
         {
             artist: "One Republic",
-            song:"Let's hurt tonight"
+            song:"Let's hurt tonight",
+            link: "https://www.youtube.com/watch?v=8wGN7D03Nho"
         },
         {
             artist: "Ed Sheeran",
-            song: "Castle on the hill"
+            song: "Castle on the hill",
+            link: "https://www.youtube.com/watch?v=K0ibBPhiaG0"
         },
         {
             artist: 'Kelly Rowland',
             song: 'Like this',
-            feat: 'Eve'
+            feat: 'Eve',
+            link: "https://www.youtube.com/watch?v=IIMAqSiesgM"
         },
         {
             artist: 'Twenty One Pilots',
-            song: 'Heathens'
+            song: 'Heathens',
+            link: "https://www.youtube.com/watch?v=UprcpdwuwCg"
         },
         {
             artist: 'Nicki Minaj',
-            song: 'Barbie Dreams'
+            song: 'Barbie Dreams',
+            link: "https://www.youtube.com/watch?v=_bvLphVWHpo"
         },
         {
             artist: 'Dua Lipa',
-            song: 'Want to'
+            song: 'Want to',
+            link: "https://www.youtube.com/watch?v=bS3uSzk4VwY"
         },
         {
             artist: "Summer Walker",
-            song: "No Love"
+            song: "No Love",
+            link: "https://www.youtube.com/watch?v=IhSPyR72CqM"
         },
         {
             artist: "Waka Flocka Flame",
-            song: "No hands"
+            song: "No hands",
+            link: "https://www.youtube.com/watch?v=skhxizRYxps"
         },
         {
             artist: "King Von",
-            song: "War"
+            song: "War",
+            link: "https://www.youtube.com/watch?v=ziIi9Si7FUQ"
         },
         {
             artist: "Lana Del Rey",
-            song: "Chemtrails over the country club"
+            song: "Chemtrails over the country club",
+            link: "https://www.youtube.com/watch?v=vBHild0PiTE"
         },
         {
             artist: "Bad meets Evil",
-            song: "Fast lane"
+            song: "Fast lane",
+            link: "https://www.youtube.com/watch?v=rJOsjP33nF4"
         },
         {
             artist: "Meek Mill",
             song: "Going bad",
-            feat: "Drake"
+            feat: "Drake",
+            link: "https://www.youtube.com/watch?v=S1gp0m4B5p8"
         },
         {
             artist: "2 Chainz",
             song: "Birthday song",
-            feat: "Kanye West"
+            feat: "Kanye West",
+            link: "https://www.youtube.com/watch?v=Y34jC4I1m70"
         },
         {
             artist: "M.I.A",
-            song: "Bad girls"
+            song: "Bad girls",
+            link: "https://www.youtube.com/watch?v=3Yuqxl284cg"
         },
         {
             artist:"Ice Spice",
-            song: "Baddie baddie"
+            song: "Baddie baddie",
+            link: "https://www.youtube.com/watch?v=qGzKA3aROGE"
         },
         {
             artist: "Bryson Tiller",
-            song: "Right My Wrongs"
+            song: "Right My Wrongs",
+            link: "https://www.youtube.com/watch?v=boZVmbb1r9A"
         },
         {
             artist: "Dlala Thukzin",
-            song: "Mali 2.0"
+            song: "Mali 2.0",
+            link: "https://www.youtube.com/watch?v=GPi7N1yX87M"
         }
     ]
 
@@ -190,6 +228,14 @@ export default function FavoriteMusic() {
                 Featuring: {Array.isArray(song.feat) ? song.feat.join(', ') : song.feat}
               </p>
             )}
+            <a
+              href={song.link}
+              target="_blank"
+              rel="noopener noreferrer"
+              className={styles.youtubeLink}
+            >
+              Watch on YouTube →
+            </a>
           </div>
         ))}
       </div>
