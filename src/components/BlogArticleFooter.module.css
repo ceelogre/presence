@@ -1,0 +1,21 @@
+.footer {
+  margin-top: 2rem;
+}
+
+.tags {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 0.5rem;
+}
+
+.tag {
+  display: inline-block;
+  background: var(--color-main);
+  color: white;
+  padding: 0.25rem 0.75rem;
+  border-radius: 20px;
+  font-family: var(--font-outfit);
+  font-size: 0.8rem;
+  font-weight: 500;
+}
