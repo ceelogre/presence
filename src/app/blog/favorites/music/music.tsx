@@ -209,6 +209,16 @@ export default function FavoriteMusic() {
             artist: "Dlala Thukzin",
             song: "Mali 2.0",
             link: "https://www.youtube.com/watch?v=GPi7N1yX87M"
+        },
+        {
+            artist: "Future",
+            song: "Type Shit",
+            feat: [
+                "Metro Boomin",
+                "Travis Scott",
+                "Playboi Carti"
+            ],
+            link: "https://www.youtube.com/watch?v=I0fgkcTbBoI"
         }
     ]
 
@@ -216,7 +226,7 @@ export default function FavoriteMusic() {
     <div className={styles.favorites}>
       <h1>My Favorite Songs</h1>
       <p className={styles.description}>
-        A collection of songs that have made an impact on me over the years.
+        A collection of songs that have made an impact on my ears over the years.
       </p>
       <div className={styles.songList}>
         {favs.map((song, index) => (
