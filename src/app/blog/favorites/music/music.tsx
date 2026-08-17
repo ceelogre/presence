@@ -219,6 +219,12 @@ export default function FavoriteMusic() {
                 "Playboi Carti"
             ],
             link: "https://www.youtube.com/watch?v=I0fgkcTbBoI"
+        },
+        {
+            artist: "Kanye West",
+            song: "Amazing",
+            feat: 'Jeezy',
+            link: "https://www.youtube.com/watch?v=5S7308YTz-U"
         }
     ]
 
