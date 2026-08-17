@@ -224,7 +224,7 @@ export default function FavoriteMusic() {
             artist: "Kanye West",
             song: "Amazing",
             feat: 'Jeezy',
-            link: "https://www.youtube.com/watch?v=5S7308YTz-U"
+            link: "https://www.youtube.com/watch?v=PH4JPgVD2SM"
         }
     ]
 
